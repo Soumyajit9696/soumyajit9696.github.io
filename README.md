@@ -26,7 +26,7 @@ SEO Optimized: With structured data and meta tags
 Performance Focused: Fast loading times
 
 🛠️ Technologies Used
-https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white
+"https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white"
 https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white
 https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black
 https://img.shields.io/badge/-Google%2520Analytics-E37400?style=flat&logo=googleanalytics&logoColor=white
