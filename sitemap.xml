@@ -2,50 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Home Section -->
   <url>
-    <loc>https://soumyajit-das.me/soumyajitdas/</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.soumyajit-das.tech/</loc>
+    <lastmod>2025-08-14</lastmod>
     <priority>1.00</priority>
   </url>
+
   <!-- Portfolio Section -->
   <url>
-    <loc>https://soumyajit-das.me/soumyajitdas/#portfolio</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.soumyajit-das.tech/#portfolio</loc>
+    <lastmod>2025-08-14</lastmod>
     <priority>0.80</priority>
   </url>
+
   <!-- AI Arts Section -->
   <url>
-    <loc>https://soumyajit-das.me/soumyajitdas/#ai-arts</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.soumyajit-das.tech/#ai-arts</loc>
+    <lastmod>2025-08-14</lastmod>
     <priority>0.80</priority>
   </url>
+
   <!-- Web Design Projects Section -->
   <url>
-    <loc>https://soumyajit-das.me/soumyajitdas/#about</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.soumyajit-das.tech/#about</loc>
+    <lastmod>2025-08-14</lastmod>
     <priority>0.80</priority>
   </url>
+
   <!-- Photography Section -->
   <url>
-    <loc>https://soumyajit-das.me/soumyajitdas/#tools</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.soumyajit-das.tech/#tools</loc>
+    <lastmod>2025-08-14</lastmod>
     <priority>0.80</priority>
   </url>
+
   <!-- WordPress Projects Section -->
   <url>
-    <loc>https://soumyajit-das.me/soumyajitdas/#services</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.soumyajit-das.tech/#services</loc>
+    <lastmod>2025-08-14</lastmod>
     <priority>0.80</priority>
   </url>
+
   <!-- Blog Section -->
   <url>
-    <loc>https://soumyajit-das.me/soumyajitdas/#blog</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.soumyajit-das.tech/#blog</loc>
+    <lastmod>2025-08-14</lastmod>
     <priority>0.70</priority>
   </url>
+
   <!-- Contact Section -->
   <url>
-    <loc>https://soumyajit-das.me/soumyajitdas/#resources</loc>
-    <lastmod>2024-07-12</lastmod>
+    <loc>https://www.soumyajit-das.tech/#resources</loc>
+    <lastmod>2025-08-14</lastmod>
     <priority>0.60</priority>
   </url>
 </urlset>
