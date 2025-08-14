@@ -53,10 +53,7 @@ soumyajitdas/
 ├── index.html            # Main website file
 └── README.md             # Project documentation
 
----
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-<div align="center">
-  <a href="https://www.soumyajit-das.tech">🌐 Live Website</a> | 
-  <a href="https://www.linkedin.com/in/soumyajit-das-40a1851b8/">💼 LinkedIn</a> | 
-  <a href="https://github.com/Soumyajit9696">🐙 GitHub Profile</a>
-</div>
+<div align="center"> <a href="https://www.soumyajit-das.tech">🌐 Live Website</a> | <a href="https://www.linkedin.com/in/soumyajit-das-40a1851b8/">💼 LinkedIn</a> | <a href="https://github.com/Soumyajit9696">🐙 GitHub Profile</a> </div>
