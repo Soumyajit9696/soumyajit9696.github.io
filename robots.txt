@@ -3,4 +3,4 @@ Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /junk/
 
-Sitemap: https://soumyajit-das.me/soumyajitdas/sitemap.xml
+Sitemap: https://www.soumyajit-das.tech/sitemap.xml
