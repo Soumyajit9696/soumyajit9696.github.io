@@ -52,7 +52,7 @@ soumyajitdas/
 │   └── styleSwitcher.js  # Style switcher
 ├── index.html            # Main website file
 └── README.md             # Project documentation
-
+'''
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
