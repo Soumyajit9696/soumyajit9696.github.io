@@ -1,6 +1,9 @@
 User-agent: *
+Allow: /
+
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /junk/
 
-Sitemap: https://www.soumyajit-das.tech/sitemap.xml
+Sitemap: https://soumyajit9696.github.io/sitemap.xml
+
