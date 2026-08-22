@@ -1,27 +1,68 @@
 
 // Preloader
 
-window.addEventListener('load', function(){
-    document.querySelector('.preloader').classList.add('opacity-0');
-    setTimeout(function(){
-        document.querySelector('.preloader').style.display = 'none';
-    }, 1000);
-});
+const preloaderStartedAt = Date.now();
+const welcomeWords = ['Welcome', 'स्वागत है', 'স্বাগতম', 'Bienvenue', 'Bienvenido', 'ようこそ'];
+const welcomeWord = document.getElementById('welcome-word');
+let welcomeIndex = 0;
+let welcomeTimer;
 
+const splitGraphemes = (word) => {
+    if (window.Intl && Intl.Segmenter) {
+        return Array.from(new Intl.Segmenter(undefined, { granularity: 'grapheme' }).segment(word), ({ segment }) => segment);
+    }
+    return Array.from(word);
+};
+const renderWelcomeWord = (word) => {
+    welcomeWord.replaceChildren();
+    splitGraphemes(word).forEach((character, index) => {
+        const letter = document.createElement('span');
+        letter.className = 'welcome-letter';
+        letter.textContent = character === ' ' ? '\u00A0' : character;
+        letter.style.animationDelay = `${index * 35}ms`;
+        welcomeWord.appendChild(letter);
+    });
+};
+
+if (welcomeWord) {
+    renderWelcomeWord(welcomeWords[welcomeIndex]);
+    welcomeTimer = setInterval(function(){
+        welcomeWord.classList.add('is-leaving');
+        setTimeout(function(){
+            welcomeIndex = (welcomeIndex + 1) % welcomeWords.length;
+            renderWelcomeWord(welcomeWords[welcomeIndex]);
+            welcomeWord.classList.remove('is-leaving');
+        }, 170);
+    }, 700);
+}
+
+window.addEventListener('load', function(){
+    const preloader = document.querySelector('.preloader');
+    if (!preloader) return;
+
+    const remainingWelcomeTime = Math.max(0, 2800 - (Date.now() - preloaderStartedAt));
+    setTimeout(function(){
+        clearInterval(welcomeTimer);
+        preloader.classList.add('opacity-0');
+        setTimeout(function(){
+            preloader.style.display = 'none';
+        }, 1000);
+    }, remainingWelcomeTime);
+});
 // iTyped 
 
 window.ityped.init(document.querySelector('.iTyped'), {
-    strings: ["I'm a Physics Undergraduate", 'I Love Computers', 'I Love Python', 'I Love Linux', 'I Love High energy Physics'],
+    strings: ["I'm a Physics Graduate", 'I Love Computers', 'I Love Python', 'I Love Linux', 'I Love Condensed Matter Physics'],
     loop: true
 });
 
-// Portfolio Item Filter
+// Gallery Item Filter
 
-const filterContainer = document.querySelector('.portfolio-filter'),
+const filterContainer = document.querySelector('.gallery-filter'),
     filterBtns = filterContainer.children,
     totalFilterBtn = filterBtns.length,
-    portfolioItems = document.querySelectorAll('.portfolio-item'),
-    totalPortfolioItem = portfolioItems.length;
+    galleryItems = document.querySelectorAll('.gallery-item'),
+    totalGalleryItem = galleryItems.length;
     
     for (let i = 0; i < totalFilterBtn; i++) {
         filterBtns[i].addEventListener("click", function(){
@@ -29,23 +70,23 @@ const filterContainer = document.querySelector('.portfolio-filter'),
             this.classList.add("active");
 
             const filterValue = this.getAttribute('data-filter');
-            for (let k = 0; k < totalPortfolioItem; k++) {
-                if (filterValue === portfolioItems[k].getAttribute('data-category')) {
-                    portfolioItems[k].classList.remove('hide');
-                    portfolioItems[k].classList.add('show');
+            for (let k = 0; k < totalGalleryItem; k++) {
+                if (filterValue === galleryItems[k].getAttribute('data-category')) {
+                    galleryItems[k].classList.remove('hide');
+                    galleryItems[k].classList.add('show');
                 } else{
-                    portfolioItems[k].classList.remove('show');
-                    portfolioItems[k].classList.add('hide');
+                    galleryItems[k].classList.remove('show');
+                    galleryItems[k].classList.add('hide');
                 }
                 if (filterValue === 'all') {
-                    portfolioItems[k].classList.remove('hide');
-                    portfolioItems[k].classList.add('show');
+                    galleryItems[k].classList.remove('hide');
+                    galleryItems[k].classList.add('show');
                 }
             }
         });
     }
 
-// Portfolio Lighbox
+// Gallery Lighbox
 
 const lightbox = document.querySelector('.lightbox'),
     lightboxImg = lightbox.querySelector('.lightbox-img'),
@@ -56,8 +97,8 @@ const lightbox = document.querySelector('.lightbox'),
 
 let itemIndex = 0;
 
-for (let i = 0; i < totalPortfolioItem; i++) {
-    portfolioItems[i].addEventListener('click', function(){
+for (let i = 0; i < totalGalleryItem; i++) {
+    galleryItems[i].addEventListener('click', function(){
         itemIndex = i;
         changeItem();
         toggleLightbox();
@@ -69,15 +110,15 @@ function toggleLightbox() {
 }
 
 function changeItem() {
-    let imgSrc = portfolioItems[itemIndex].querySelector('.portfolio-img img').getAttribute('src');
+    let imgSrc = galleryItems[itemIndex].querySelector('.gallery-img img').getAttribute('src');
     lightboxImg.src = imgSrc;
-    lightboxText.innerHTML = portfolioItems[itemIndex].querySelector('h4').innerHTML;
-    lightboxCounter.innerHTML = (itemIndex + 1) + " of " + totalPortfolioItem;
+    lightboxText.innerHTML = galleryItems[itemIndex].querySelector('h4').innerHTML;
+    lightboxCounter.innerHTML = (itemIndex + 1) + " of " + totalGalleryItem;
 }
 
 function prevItem() {
     if (itemIndex === 0) {
-        itemIndex = totalPortfolioItem - 1;
+        itemIndex = totalGalleryItem - 1;
     } else {
         itemIndex--;
     }
@@ -85,7 +126,7 @@ function prevItem() {
 }
 
 function nextItem() {
-    if (itemIndex === totalPortfolioItem - 1) {
+    if (itemIndex === totalGalleryItem - 1) {
         itemIndex = 0;
     } else {
         itemIndex++;
@@ -192,42 +233,46 @@ function asideSectionTogglerBtn()
 
 // AI Arts Lightbox
 const aiArtsLightbox = document.querySelector('.ai-arts-lightbox'),
-    aiArtsLightboxImg = aiArtsLightbox.querySelector('.ai-arts-lightbox-img'),
-    aiArtsLightboxText = aiArtsLightbox.querySelector('.ai-arts-caption-text'),
-    aiArtsLightboxClose = aiArtsLightbox.querySelector('.ai-arts-lightbox-close'),
-    aiArtsLightboxCounter = aiArtsLightbox.querySelector('.ai-arts-caption-counter'),
-    aiArtsDownloadButton = aiArtsLightbox.querySelector('.ai-arts-download-button');
+    aiArtsLightboxImg = aiArtsLightbox ? aiArtsLightbox.querySelector('.ai-arts-lightbox-img') : null,
+    aiArtsLightboxText = aiArtsLightbox ? aiArtsLightbox.querySelector('.ai-arts-caption-text') : null,
+    aiArtsLightboxClose = aiArtsLightbox ? aiArtsLightbox.querySelector('.ai-arts-lightbox-close') : null,
+    aiArtsLightboxCounter = aiArtsLightbox ? aiArtsLightbox.querySelector('.ai-arts-caption-counter') : null,
+    aiArtsDownloadButton = aiArtsLightbox ? aiArtsLightbox.querySelector('.ai-arts-download-button') : null;
 
-let aiArtsItemIndex = 0,
-    aiArtsTotalItems = document.querySelectorAll('.ai-arts-item').length,
-    aiArtsItems = document.querySelectorAll('.ai-arts-item');
+let aiArtsItemIndex = 0;
+const aiArtsItems = document.querySelectorAll('.ai-arts-item');
+const aiArtsTotalItems = aiArtsItems.length;
 
-for (let i = 0; i < aiArtsTotalItems; i++) {
-    aiArtsItems[i].addEventListener('click', function(){
-        aiArtsItemIndex = i;
-        aiArtsChangeItem();
-        aiArtsToggleLightbox();
+if (aiArtsLightbox) {
+    for (let i = 0; i < aiArtsTotalItems; i++) {
+        aiArtsItems[i].addEventListener('click', function(){
+            aiArtsItemIndex = i;
+            aiArtsChangeItem();
+            aiArtsToggleLightbox();
+        });
+    }
+
+    function aiArtsToggleLightbox() {
+        aiArtsLightbox.classList.toggle('open');
+    }
+
+    function aiArtsChangeItem() {
+        let imgSrc = aiArtsItems[aiArtsItemIndex].querySelector('.ai-arts-img img').getAttribute('src');
+        if(aiArtsLightboxImg) aiArtsLightboxImg.src = imgSrc;
+        if(aiArtsLightboxText) aiArtsLightboxText.innerHTML = ""; // Remove the AI Art name
+        if(aiArtsLightboxCounter) aiArtsLightboxCounter.innerHTML = (aiArtsItemIndex + 1) + " of " + aiArtsTotalItems;
+        if(aiArtsDownloadButton) aiArtsDownloadButton.href = imgSrc;
+    }
+
+    if(aiArtsLightboxClose) {
+        aiArtsLightboxClose.addEventListener('click', aiArtsToggleLightbox);
+    }
+    aiArtsLightbox.addEventListener('click', function(event){
+        if(event.target === aiArtsLightbox){
+            aiArtsToggleLightbox();
+        }
     });
 }
-
-function aiArtsToggleLightbox() {
-    aiArtsLightbox.classList.toggle('open');
-}
-
-function aiArtsChangeItem() {
-    let imgSrc = aiArtsItems[aiArtsItemIndex].querySelector('.ai-arts-img img').getAttribute('src');
-    aiArtsLightboxImg.src = imgSrc;
-    aiArtsLightboxText.innerHTML = ""; // Remove the AI Art name
-    aiArtsLightboxCounter.innerHTML = (aiArtsItemIndex + 1) + " of " + aiArtsTotalItems;
-    aiArtsDownloadButton.href = imgSrc;
-}
-
-aiArtsLightboxClose.addEventListener('click', aiArtsToggleLightbox);
-aiArtsLightbox.addEventListener('click', function(event){
-    if(event.target === aiArtsLightbox){
-        aiArtsToggleLightbox();
-    }
-});
 // Resources Animation
 
 const resourceItems = document.querySelectorAll('.resource-item');
