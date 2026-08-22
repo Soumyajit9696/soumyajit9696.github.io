@@ -1,13 +1,13 @@
 # soumyajitdas
 # Personal Portfolio Website - Soumyajit Das
 
-[![Website Preview](https://www.soumyajit-das.tech/images/abtt.png)](https://www.soumyajit-das.tech)
+[![Website Preview](https://www.soumyajit-das.tech/images/abtt.png)](https://soumyajit9696.github.io)
 
 ## 🌟 About This Project
 
 This repository contains the source code for my personal portfolio website showcasing my work as a Physics student and tech enthusiast. The site features my portfolio, blog, AI art gallery, and technical resources.
 
-**Live Demo:** [soumyajit-das.tech](https://www.soumyajit-das.tech/)
+**Live Demo:** [soumyajit9696.github.io](https://soumyajit9696.github.io/)
 
 ## 🚀 Features
 
