@@ -13,7 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   
  <!--Canonical tag-->
-  <link rel="canonical" href="https://soumyajit9696.github.io/soumyajitdas/" />
+  <link rel="canonical" href="https://soumyajit9696.github.io/" />
   <!-- Meta Tags -->
   <meta name="description" content="Official website of Soumyajit Das, a Physics student and tech enthusiast. Explore my portfolio, blog, Linkedin,  tools, AI arts, and more.">
   <meta name="keywords" content="Soumyajit Das, Physics Student, Tech enthusiast, Portfolio, Blog, AI Arts">
@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:title" content="Soumyajit Das - Physics Student & Tech enthusiast">
   <meta property="og:description" content="Official website of Soumyajit Das, a Physics student and Tech enthusiast. Explore my portfolio, blog, tools, AI arts, and more.">
   <meta property="og:image" content="./images/abtt.png"> <!-- Replace with your OG image URL -->
-  <meta property="og:url" content="https://soumyajit9696.github.io/soumyajitdas/"> <!-- Replace with your website URL -->
+  <meta property="og:url" content="https://soumyajit9696.github.io/"> <!-- Replace with your website URL -->
   <meta property="og:type" content="website">
   
   <!-- Twitter Card Tags -->
@@ -72,10 +72,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
   <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader">
-
-    </div>
+  <div class="preloader" aria-label="Welcome">
+    <div class="welcome-loader" aria-hidden="true"><span id="welcome-word">Welcome</span></div>
   </div>
   <!-- Preloader End -->
 
@@ -97,9 +95,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
           <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
           <li><a href="#services"><i class="fa fa-list"></i> Tools</a></li>
-          <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Gallery</a></li>
+          <li><a href="#gallery"><i class="fa fa-camera"></i> Gallery</a></li>
           <li><a href="#blog"><i class="fa fa-envelope"></i> Blog</a></li>
-          <li><a href="#ai-arts"><i class="fa fa-pencil"></i> AI arts</a></li> <!-- Added AI arts section -->
+          <li><a href="#ai-arts"><i class="fa fa-pencil"></i> AI Arts</a></li>
           <li><a href="#resources"><i class="fa fa-comments"></i> Resources</a></li>
         </ul>
         <!-- Copyright -->
@@ -116,6 +114,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <section class="home section active" id="home">
         <div class="container">
           <div class="intro">
+            <div class="club-crests" aria-hidden="true">
+              <img src="images/manchester-city-crest.svg" alt="" class="club-crest club-crest-city">
+              <img src="images/mohun-bagan-super-giant-crest.png" alt="" class="club-crest club-crest-mbsg">
+            </div>
             <img src="images/abtt.png" alt="profile" class="shadow-dark">
             <h1>Soumyajit Das</h1>
             <span class="iTyped"></span>
@@ -143,7 +145,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="row">
                 <div class="about-text padd-15">
                   <h3>I'm Soumyajit Das and a <span>Physics Student</span></h3>
-                  <p>Hi! My name is Soumyajit Das. I am a Physics Student who is deeply passionate and dedicated to my studies. With experience in Python programming and web development, I have acquired the skills and knowledge necessary to tackle complex problems and projects. I enjoy every step of the scientific process, from theoretical discussions to practical applications in technology and computers. </p>
+                  <p>A physics graduate with a keen interest in semiconductor physics, condensed matter physics, and computational materials science. I am interested in first-principles simulations, nanoscience, MEMS/NEMS, and
+machine learning applications in physics. I want to contribute towards the scientific community through
+my skills and learning. </p>
                 </div>
               </div>
               <div class="row">
@@ -234,7 +238,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                           <div class="circle-dot"></div>
                           <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2026</h6>
                           <h4 class="timeline-title">Master of Science In Physics, NIT Silchar </h4>
-                          <p class="timeline-text">I am pursuing my M.Sc. in Physics at NIT Silchar, diving into theoretical and experimental studies. This program enhances my knowledge and skills, preparing me for advanced research in the field.</p>
+                          <p class="timeline-text">M.Sc. in Physics at NIT Silchar, with a strong focus on theoretical and computational physics. 
+                            Developed advanced knowledge and research skills through coursework and research in condensed matter physics, materials science, 
+                            and computational methods.
+                          </p>
                         </div>
                         <!-- timeline Item End -->
                         <!-- timeline Item -->
@@ -351,30 +358,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 
-      <!-- Portfolio Section -->
-      <section class="portfolio section" id="portfolio">
+      <!-- Gallery Section -->
+      <section class="gallery section" id="gallery">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
-              <h2>Portfolio</h2>
+              <h2>Gallery</h2>
             </div>
           </div>
           <div class="row">
-            <div class="portfolio-filter padd-15">
+            <div class="gallery-filter padd-15">
               <button type="button" class="active" data-filter="all">All</button>
               <button type="button" data-filter="images">Images</button>
               <button type="button" data-filter="physics">Physics</button>
               <button type="button" data-filter="football">Football</button>
+              <button type="button" data-filter="college">College Days</button>
+              <button type="button" data-filter="trips">Trips</button>
             </div>
           </div>
           <div class="row">
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="images">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+            <!-- Placeholder for College Days -->
+            <div class="gallery-item padd-15" data-category="college">
+              <div class="gallery-item-inner shadow-dark">
+                <div class="gallery-img">
+                  <img src="./images/trnss.png" alt="College Photo Placeholder">
+                </div>
+                <div class="gallery-info">
+                  <h4>College Memories</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Placeholder for Trips -->
+            <div class="gallery-item padd-15" data-category="trips">
+              <div class="gallery-item-inner shadow-dark">
+                <div class="gallery-img">
+                  <img src="./images/trnss.png" alt="Trip Photo Placeholder">
+                </div>
+                <div class="gallery-info">
+                  <h4>Trip to Mountains</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Gallery Item -->
+            <div class="gallery-item padd-15" data-category="images">
+              <div class="gallery-item-inner shadow-dark">
+                <div class="gallery-img">
                   <img src="images/portfolio/1.jpg" alt="images">
                 </div>
-                <div class="portfolio-info">
+                <div class="gallery-info">
                   <h4>Car</h4>
                   <div class="icon">
                     <i class="fa fa-search"></i>
@@ -382,14 +419,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="images">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+            <!-- Gallery Item End -->
+            <!-- Gallery Item -->
+            <div class="gallery-item padd-15" data-category="images">
+              <div class="gallery-item-inner shadow-dark">
+                <div class="gallery-img">
                   <img src="images/portfolio/2.jpg" alt="images">
                 </div>
-                <div class="portfolio-info">
+                <div class="gallery-info">
                   <h4>Nature</h4>
                   <div class="icon">
                     <i class="fa fa-search"></i>
@@ -397,14 +434,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="images">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+            <!-- Gallery Item End -->
+            <!-- Gallery Item -->
+            <div class="gallery-item padd-15" data-category="images">
+              <div class="gallery-item-inner shadow-dark">
+                <div class="gallery-img">
                   <img src="images/portfolio/3.jpg" alt="Wordpress">
                 </div>
-                <div class="portfolio-info">
+                <div class="gallery-info">
                   <h4>India</h4>
                   <div class="icon">
                     <i class="fa fa-search"></i>
@@ -412,14 +449,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="physics">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+            <!-- Gallery Item End -->
+            <!-- Gallery Item -->
+            <div class="gallery-item padd-15" data-category="physics">
+              <div class="gallery-item-inner shadow-dark">
+                <div class="gallery-img">
                   <img src="images/portfolio/4.jpg" alt="physics">
                 </div>
-                <div class="portfolio-info">
+                <div class="gallery-info">
                   <h4>Physics</h4>
                   <div class="icon">
                     <i class="fa fa-search"></i>
@@ -427,14 +464,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="physics">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+            <!-- Gallery Item End -->
+            <!-- Gallery Item -->
+            <div class="gallery-item padd-15" data-category="physics">
+              <div class="gallery-item-inner shadow-dark">
+                <div class="gallery-img">
                   <img src="images/portfolio/6.jpg" alt="Wordpress">
                 </div>
-                <div class="portfolio-info">
+                <div class="gallery-info">
                   <h4>Physics</h4>
                   <div class="icon">
                     <i class="fa fa-search"></i>
@@ -442,14 +479,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="football">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
+            <!-- Gallery Item End -->
+            <!-- Gallery Item -->
+            <div class="gallery-item padd-15" data-category="football">
+              <div class="gallery-item-inner shadow-dark">
+                <div class="gallery-img">
                   <img src="images/portfolio/5.jpg" alt="football">
                 </div>
-                <div class="portfolio-info">
+                <div class="gallery-info">
                   <h4>Lionel Messi</h4>
                   <div class="icon">
                     <i class="fa fa-search"></i>
@@ -457,11 +494,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item End -->
+            <!-- Gallery Item End -->
           </div>
         </div>
       </section>
-      <!-- Portfolio Section End -->
+      <!-- Gallery Section End -->
 
       <!-- Blog Section -->
       <section class="blog section" id="blog">
@@ -471,62 +508,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <h2>Latest Blog</h2>
             </div>
           </div>
-          <div class="row">
-            <!-- Blog Item -->
-            <div class="blog-item padd-15">
-              <div class="blog-item-inner shadow-dark">
-                <div class="blog-img">
-                  <img src="images/blog/1.jpg" alt="">
-                  <div class="blog-date">
-                    4 jun 2020
-                  </div>
-                </div>
-                <div class="blog-info">
-                  <h4 class="blog-title">Top 5 Physics equations</h4>
-                  <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo
-                    quam, eum alias id, repellendus magni, quas.</p>
-                  <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="#">css</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Blog Item End -->
-            <!-- Blog Item -->
-            <div class="blog-item padd-15">
-              <div class="blog-item-inner shadow-dark">
-                <div class="blog-img">
-                  <img src="images/blog/2.jpg" alt="">
-                  <div class="blog-date">
-                    4 jun 2020
-                  </div>
-                </div>
-                <div class="blog-info">
-                  <h4 class="blog-title">Creative Slideshow</h4>
-                  <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo
-                    quam, eum alias id, repellendus magni, quas.</p>
-                  <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="#">Javascript</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Blog Item End -->
-            <!-- Blog Item -->
-            <div class="blog-item padd-15">
-              <div class="blog-item-inner shadow-dark">
-                <div class="blog-img">
-                  <img src="images/blog/3.jpg" alt="">
-                  <div class="blog-date">
-                    4 jun 2020
-                  </div>
-                </div>
-                <div class="blog-info">
-                  <h4 class="blog-title">Powerpoint user guide</h4>
-                  <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo
-                    quam, eum alias id, repellendus magni, quas.</p>
-                  <p class="blog-tags">Tags : <a href="#">Javascript</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Blog Item End -->
-          </div>
+          <div class="row" id="blogger-posts" aria-live="polite"></div>
         </div>
       </section>
       <!-- Blog Section End -->
@@ -535,12 +517,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="ai-arts section" id="ai-arts">
   <div class="container">
     <div class="row">
+    <div class="row">
       <div class="section-title padd-15">
         <h2>AI Arts</h2>
       </div>
     </div>
     <div class="row">
-         <div class="ai-arts-item padd-15" data-category="ai-art">
+      <!-- Existing AI Arts items -->
+      <div class="ai-arts-item padd-15" data-category="ai-art">
         <div class="ai-arts-img">
           <img src="./images/ai_arts/ai_arts (39).jpg" alt="">
         </div>
@@ -821,63 +805,268 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2>Resources</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="left-panel padd-15">
-        <div class="widget date" id="currentDate"></div>
-        <div class="widget calendar">
-          <img src="./images/trnss.png" alt="Calendar Image">
+    <div class="resources-grid">
+      <!-- Left Panel -->
+      <div class="res-left">
+        <!-- Top row: Date + Image -->
+        <div class="res-top-row">
+          <div class="res-date-widget" id="currentDate"></div>
+          <div class="res-image-widget">
+            <img src="./images/trnss.png" alt="Scenic View">
+          </div>
         </div>
-        <div class="widget music-player">
-          <div class="cover"></div>
-          <div class="song-name" style="color: rgb(0 6 47);">Favourite Song|| HALL OF FAME</div>
-          <audio id="audioPlayer" controls>
-            <source src="favsong.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <div class="horizontal-bar">
-            <i class="fa fa-bell"></i>
-            <div class="battery-level">
-              <button style="border-radius: 16px; padding: 5px;">Have a Good Day</button>
+        <!-- Music Player -->
+        <div class="res-music-player">
+          <div class="res-music-top">
+            <span class="res-song-title" id="resSongTitle">HALL OF FAME</span>
+            <i class="fa fa-heart-o res-fav-icon" id="resFavIcon"></i>
+          </div>
+          <div class="res-progress-bar">
+            <span class="res-time-left" id="resCurrentTime">0:00</span>
+            <div class="res-progress-track" id="resProgressTrack">
+              <div class="res-progress-fill" id="resProgressFill"></div>
+              <div class="res-progress-thumb" id="resProgressThumb"></div>
             </div>
+            <span class="res-time-right" id="resDuration">0:00</span>
+          </div>
+          <div class="res-controls">
+            <i class="fa fa-random res-ctrl-icon" id="resShuffle"></i>
+            <i class="fa fa-backward res-ctrl-icon" id="resBackward"></i>
+            <button class="res-play-btn" id="resPlayBtn"><i class="fa fa-play" id="resPlayIcon"></i></button>
+            <i class="fa fa-forward res-ctrl-icon" id="resForward"></i>
+            <i class="fa fa-repeat res-ctrl-icon" id="resRepeat"></i>
+          </div>
+          <div class="res-volume-bar">
+            <i class="fa fa-volume-down res-vol-icon"></i>
+            <div class="res-volume-track" id="resVolumeTrack">
+              <div class="res-volume-fill" id="resVolumeFill" style="width:80%"></div>
+              <div class="res-volume-thumb" id="resVolumeThumb" style="left:calc(80% - 6px)"></div>
+            </div>
+            <i class="fa fa-volume-up res-vol-icon"></i>
+          </div>
+          <div class="res-status-bar">
             <i class="fa fa-wifi"></i>
+            <i class="fa fa-bell"></i>
+            <span class="res-connected-badge">You're Connected</span>
+            <span class="res-battery"><i class="fa fa-battery-half"></i> 50%</span>
+          </div>
+          <div class="res-good-day">
+            HAVE A GOOD DAY <i class="fa fa-sun-o"></i>
+          </div>
+          <audio id="resAudio" preload="metadata">
+            <source src="favsong.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="res-right">
+        <!-- Projects (tall left column) -->
+        <div class="res-projects-card">
+          <h3 class="res-card-title">PROJECTS</h3>
+          <!-- Scenic image between title and list -->
+          <div class="res-projects-img">
+            <img src="./images/trnss.png" alt="Project Cover">
+          </div>
+          <ol class="res-projects-list">
+            <li>AFM OF UNITY</li>
+          </ol>
+          <a href="#" class="res-view-link">View all projects &rarr;</a>
+        </div>
+        <!-- Right sub-column: Software + Books -->
+        <div class="res-right-sub">
+          <div class="res-software-card">
+            <h3 class="res-card-title">SOFTWARE</h3>
+            <div class="res-code-icon">&lt;/&gt;</div>
+            <a href="#services" class="res-view-link">Explore my tools &rarr;</a>
+          </div>
+          <div class="res-books-card">
+            <h3 class="res-card-title">BOOKS</h3>
+            <div class="res-books-grid">
+              <a href="https://drive.google.com/drive/folders/1kgAgFtQFkJ_OmzYGRMNfcHJSnyEhJSwa?usp=sharing" class="res-book res-book-1" target="_blank"><i class="fa fa-book"></i></a>
+              <a href="#" class="res-book res-book-2"><i class="fa fa-book"></i></a>
+              <a href="#" class="res-book res-book-3"><i class="fa fa-book"></i></a>
+              <a href="#" class="res-book res-book-4"><i class="fa fa-book"></i></a>
+              <a href="#" class="res-book res-book-5"><i class="fa fa-book"></i></a>
+              <a href="#" class="res-book res-book-6"><i class="fa fa-book"></i></a>
+              <a href="#" class="res-book res-book-7"><i class="fa fa-book"></i></a>
+              <a href="#" class="res-book res-book-8"><i class="fa fa-book"></i></a>
+              <a href="#" class="res-book res-book-9"><i class="fa fa-book"></i></a>
+            </div>
+            <a href="#" class="res-view-link">View all books &rarr;</a>
           </div>
         </div>
       </div>
-      <div class="right-panel padd-15">
-        <div class="projects widget">
-          <div>PROJECTS</div>
-          <p>1. Project 1</p>
-        </div>
-        <div class="software widget">
-          <div>SOFTWARE</div>
-        </div>
-        <div class="book-section widget">
-          <div>BOOKS</div>
-          <div class="books">
-            <div class="book"><a href="https://drive.google.com/drive/folders/1kgAgFtQFkJ_OmzYGRMNfcHJSnyEhJSwa?usp=sharing"><i class="fa fa-folder"></i></a></div>
-            <div class="book"><a href="#"><i class="fa fa-folder"></i></a></div>
-            <div class="book"><a href="#"><i class="fa fa-folder"></i></a></div>
-            <div class="book"><a href="#"><i class="fa fa-folder"></i></a></div>
-            <div class="book"><a href="#"><i the="fa fa-folder"></i></a></div>
-            <div class="book"><a href="#"><i class="fa fa-folder"></i></a></div>
-            <div class="book"><a href="#"><i class="fa fa-folder"></i></a></div>
-            <div class="book"><a href="#"><i class="fa fa-folder"></i></a></div>
-            <div class="book"><a href="#"><i class="fa fa-folder"></i></a></div>
-          </div>
-        </div>
+    </div>
+    
+    <!-- Downloads Section -->
+    <div class="downloads-heading" id="downloads">
+      <div>
+        <p class="downloads-kicker">RESOURCE LIBRARY</p>
+        <h2>Downloads</h2>
+        <p>Useful academic documents, research material, and study resources in one place.</p>
       </div>
+      <span class="downloads-count">04 resources</span>
+    </div>
+    <div class="downloads-grid">
+      <article class="dl-card">
+        <div class="dl-card-header">
+          <div class="dl-icon-wrap dl-icon-red"><i class="fa fa-file-text-o"></i></div>
+          <span class="dl-card-type">DOCUMENT</span>
+        </div>
+        <div class="dl-info">
+          <h4 class="dl-title">Curriculum Vitae</h4>
+          <p class="dl-desc">My academic and professional resume, including research experience, education, and skills.</p>
+          <p class="dl-meta"><i class="fa fa-file-pdf-o"></i> PDF document</p>
+          <a href="./docs/SOUMYAJIT_DAS_CV (6).pdf" download class="dl-btn"><i class="fa fa-download"></i> Download CV</a>
+        </div>
+      </article>
+      <article class="dl-card">
+        <div class="dl-card-header">
+          <div class="dl-icon-wrap dl-icon-purple"><i class="fa fa-file-pdf-o"></i></div>
+          <span class="dl-card-type">RESEARCH</span>
+        </div>
+        <div class="dl-info">
+          <h4 class="dl-title">Research Paper</h4>
+          <p class="dl-desc">DFT study of Transition Metal Dichalcogenides for optoelectronic applications — M.Sc project.</p>
+          <p class="dl-meta"><i class="fa fa-clock-o"></i> In preparation</p>
+          <a href="#" class="dl-btn dl-btn-outline"><i class="fa fa-clock-o"></i> Coming Soon</a>
+        </div>
+      </article>
+      <article class="dl-card">
+        <div class="dl-card-header">
+          <div class="dl-icon-wrap dl-icon-dark"><i class="fa fa-book"></i></div>
+          <span class="dl-card-type">STUDY MATERIAL</span>
+        </div>
+        <div class="dl-info">
+          <h4 class="dl-title">Physics Notes</h4>
+          <p class="dl-desc">Curated notes on quantum mechanics, solid state physics, and computational methods.</p>
+          <p class="dl-meta"><i class="fa fa-folder-open-o"></i> Google Drive collection</p>
+          <a href="https://drive.google.com/drive/folders/1kgAgFtQFkJ_OmzYGRMNfcHJSnyEhJSwa?usp=sharing" target="_blank" rel="noopener" class="dl-btn"><i class="fa fa-external-link"></i> Open Drive</a>
+        </div>
+      </article>
+      <article class="dl-card">
+        <div class="dl-card-header">
+          <div class="dl-icon-wrap dl-icon-accent"><i class="fa fa-flask"></i></div>
+          <span class="dl-card-type">LAB WORK</span>
+        </div>
+        <div class="dl-info">
+          <h4 class="dl-title">Internship Report</h4>
+          <p class="dl-desc">Summer internship report from IISER Kolkata, SSPL Lab under Prof. Satyabrata Raj.</p>
+          <p class="dl-meta"><i class="fa fa-clock-o"></i> In preparation</p>
+          <a href="#" class="dl-btn dl-btn-outline"><i class="fa fa-clock-o"></i> Coming Soon</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const dateElement = document.getElementById('currentDate');
-    const today = new Date();
-    const day = today.getDate();
-    const month = today.toLocaleString('default', { month: 'short' }).toUpperCase();
-    dateElement.innerHTML = `<div>${month}</div><div>${day}</div>`;
+(function() {
+  /* --- Date Widget --- */
+  var dateEl = document.getElementById('currentDate');
+  if (dateEl) {
+    var today = new Date();
+    var day = today.getDate();
+    var month = today.toLocaleString('default', { month: 'short' }).toUpperCase();
+    dateEl.innerHTML = '<div>' + month + '</div><div>' + day + '</div>';
+  }
+
+  /* --- Music Player --- */
+  var audio      = document.getElementById('resAudio');
+  var playBtn    = document.getElementById('resPlayBtn');
+  var playIcon   = document.getElementById('resPlayIcon');
+  var curTimeEl  = document.getElementById('resCurrentTime');
+  var durEl      = document.getElementById('resDuration');
+  var progTrack  = document.getElementById('resProgressTrack');
+  var progFill   = document.getElementById('resProgressFill');
+  var progThumb  = document.getElementById('resProgressThumb');
+  var volTrack   = document.getElementById('resVolumeTrack');
+  var volFill    = document.getElementById('resVolumeFill');
+  var volThumb   = document.getElementById('resVolumeThumb');
+  var favIcon    = document.getElementById('resFavIcon');
+  var repeatBtn  = document.getElementById('resRepeat');
+  var backBtn    = document.getElementById('resBackward');
+  var fwdBtn     = document.getElementById('resForward');
+
+  if (!audio || !playBtn) return;
+
+  function fmt(s) {
+    s = isNaN(s) ? 0 : s;
+    var m = Math.floor(s / 60);
+    var sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+
+  playBtn.addEventListener('click', function() {
+    if (audio.paused) {
+      audio.play().catch(function() {});
+      playIcon.className = 'fa fa-pause';
+    } else {
+      audio.pause();
+      playIcon.className = 'fa fa-play';
+    }
   });
+
+  audio.addEventListener('timeupdate', function() {
+    if (!audio.duration) return;
+    var pct = (audio.currentTime / audio.duration) * 100;
+    progFill.style.width = pct + '%';
+    progThumb.style.left = 'calc(' + pct + '% - 6px)';
+    curTimeEl.textContent = fmt(audio.currentTime);
+  });
+
+  audio.addEventListener('loadedmetadata', function() {
+    durEl.textContent = fmt(audio.duration);
+  });
+
+  audio.addEventListener('ended', function() {
+    playIcon.className = 'fa fa-play';
+  });
+
+  function seekTo(e) {
+    var rect = progTrack.getBoundingClientRect();
+    var pct  = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    if (audio.duration) audio.currentTime = pct * audio.duration;
+  }
+  progTrack.addEventListener('click', seekTo);
+  var draggingProg = false;
+  progThumb.addEventListener('mousedown', function(e) { draggingProg = true; e.preventDefault(); });
+  document.addEventListener('mousemove', function(e) { if (draggingProg) seekTo(e); });
+  document.addEventListener('mouseup',   function()  { draggingProg = false; });
+
+  audio.volume = 0.8;
+  function setVol(e) {
+    var rect = volTrack.getBoundingClientRect();
+    var pct  = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    audio.volume = pct;
+    volFill.style.width = (pct * 100) + '%';
+    volThumb.style.left = 'calc(' + (pct * 100) + '% - 6px)';
+  }
+  volTrack.addEventListener('click', setVol);
+  var draggingVol = false;
+  volThumb.addEventListener('mousedown', function(e) { draggingVol = true; e.preventDefault(); });
+  document.addEventListener('mousemove', function(e) { if (draggingVol) setVol(e); });
+  document.addEventListener('mouseup',   function()  { draggingVol = false; });
+
+  backBtn.addEventListener('click', function() { audio.currentTime = Math.max(0, audio.currentTime - 10); });
+  fwdBtn.addEventListener('click',  function() { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 10); });
+
+  repeatBtn.addEventListener('click', function() {
+    audio.loop = !audio.loop;
+    repeatBtn.style.opacity = audio.loop ? '1' : '0.45';
+  });
+
+  favIcon.addEventListener('click', function() {
+    if (favIcon.classList.contains('fa-heart-o')) {
+      favIcon.classList.replace('fa-heart-o', 'fa-heart');
+      favIcon.style.color = '#c0392b';
+    } else {
+      favIcon.classList.replace('fa-heart', 'fa-heart-o');
+      favIcon.style.color = '';
+    }
+  });
+})();
 </script>
 
 
@@ -930,6 +1119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="js/ityped.min.js"></script>
   <!-- Template js -->
   <script src="js/script.js"></script>
+  <script src="js/blogger-posts.js"></script>
   <!-- Live Style Js - Demo Only -->
   <script src="js/styleSwitcher.js"></script>
 </body>
