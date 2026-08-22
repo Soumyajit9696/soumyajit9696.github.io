@@ -72,13 +72,17 @@ body.dark .aside,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .blog .blog-item-inner .blog-info,
 body.dark .service .service-item .service-item-inner,
-body.dark .about .about-content .timeline{
+body.dark .about .about-content .timeline,
+body.dark .dl-card,
+body.dark .res-projects-card,
+body.dark .res-software-card,
+body.dark .res-books-card {
     background-color: #222222;
 }
 body.dark .aside .nav li a,
 body.dark .blog .blog-item-inner .blog-info .blog-title,
 body.dark .contact .contact-info-item h4,
-body.dark .portfolio .portfolio-filter button,
+body.dark .gallery .gallery-filter button,
 body.dark .service .service-item .service-item-inner h4,
 body.dark .about .about-content .timeline .timeline-title,
 body.dark .about .about-content .skills .skill-item h5,
@@ -87,7 +91,9 @@ body.dark .about .about-content .about-text h3,
 body.dark .home .intro h1,
 body.dark .about .about-content h3.title,
 body.dark .section-title h2,
-body.dark .aside .logo a{
+body.dark .aside .logo a,
+body.dark .dl-title,
+body.dark .res-card-title {
     color: #ffffff;
 }
 body.dark .home .intro span,
@@ -100,20 +106,44 @@ body.dark .about .about-content .timeline .timeline-text,
 body.dark .about .about-content .timeline .timeline-date,
 body.dark .about .about-content .skills .skill-item .skill-porcent,
 body.dark .about .about-content .personal-info .info-item p span,
-body.dark .about .about-content .about-text p{
+body.dark .about .about-content .about-text p,
+body.dark .dl-desc,
+body.dark .res-projects-list li {
     color: #e9e9e9;
 }
 body.dark .about .about-content .personal-info .info-item p,
 body.dark .aside,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .blog .blog-item-inner,
-body.dark .portfolio .portfolio-item-innner,
+body.dark .gallery .gallery-item-innner,
 body.dark .service .service-item .service-item-inner,
 body.dark .about .about-content .timeline,
-body.dark .aside .nav li a{
+body.dark .aside .nav li a,
+body.dark .dl-card,
+body.dark .res-projects-card,
+body.dark .res-software-card,
+body.dark .res-books-card,
+body.dark .res-projects-list li,
+body.dark .dl-btn.dl-btn-outline {
     border-color: #393939;
 }
 body.dark .shadow-dark{
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+/* Downloads library: dark theme */
+body.dark .downloads-heading { background: linear-gradient(115deg, #222222 0%, #2a2026 100%); border-color: #393939; }
+body.dark .downloads-heading h2 { color: #ffffff; }
+body.dark .downloads-heading > div > p:last-child, body.dark .downloads-count, body.dark .dl-meta { color: #c9c9c9; }
+body.dark .downloads-count, body.dark .dl-card-type { background: #2d2d2d; border-color: #454545; color: #d9d9d9; }
+body.dark .dl-card-type { border: 1px solid #454545; }
+body.dark .dl-btn.dl-btn-outline { color: #e9e9e9; background: transparent; }
+body.dark .dl-btn.dl-btn-outline:hover { border-color: var(--skin-color); color: #ffffff; }
+/* Compact download buttons: dark theme */
+body.dark .dl-btn, body.dark .dl-btn.dl-btn-outline { color: #ffffff; border: 0; }
+body.dark .dl-btn:hover, body.dark .dl-btn.dl-btn-outline:hover { color: #ffffff; border: 0; }body.dark .dl-btn { background: var(--skin-color); }
+body.dark .dl-card:nth-child(2) .dl-btn.dl-btn-outline { background: #7c3ca1; }
+body.dark .dl-card:nth-child(4) .dl-btn.dl-btn-outline { background: #cf650d; }
+body.dark .dl-card:nth-child(2) .dl-btn.dl-btn-outline:hover { background: #632b84; }
+body.dark .dl-card:nth-child(4) .dl-btn.dl-btn-outline:hover { background: #aa5109; }body.dark .dl-card:nth-child(1) .dl-btn,
+body.dark .dl-card:nth-child(3) .dl-btn { background: #ec1839; color: #ffffff; box-shadow: none; }
