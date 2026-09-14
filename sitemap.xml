@@ -1,17 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Homepage -->
   <url>
-       <loc>https://soumyajit9696.github.io/</loc>
-       <lastmod>2026-08-23T05:49:51+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
+    <loc>https://soumyajit9696.github.io/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/abtt.webp</image:loc>
+      <image:title>Soumyajit Das - Physics Graduate and Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/social_banner.webp</image:loc>
+      <image:title>Soumyajit Das Portfolio Banner</image:title>
+    </image:image>
   </url>
+
+  <!-- About -->
   <url>
-       <loc>https://soumyajit9696.github.io/docs/SOUMYAJIT_DAS_CV%20(6).pdf</loc>
-       <lastmod>2026-08-23T05:49:50+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://soumyajit9696.github.io/about.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/about.webp</image:loc>
+      <image:title>About Soumyajit Das - Physics Graduate and Developer</image:title>
+    </image:image>
   </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://soumyajit9696.github.io/skills.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://soumyajit9696.github.io/gallery.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/Physics/Albert-Einstein-004.webp</image:loc>
+      <image:title>Albert Einstein - Physics Gallery</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/CollegeDays/bsc_img.webp</image:loc>
+      <image:title>College Days - BSc Physics</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://soumyajit9696.github.io/blog.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- AI Arts -->
+  <url>
+    <loc>https://soumyajit9696.github.io/ai-arts.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/ai_arts/ai_arts%20(1).png</image:loc>
+      <image:title>AI-Generated Artwork by Soumyajit Das</image:title>
+    </image:image>
+  </url>
+
+  <!-- Resources -->
+  <url>
+    <loc>https://soumyajit9696.github.io/resources.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

@@ -1,5 +1,5 @@
 
-// Preloader
+// Preloader (only on index.html / home page)
 
 const preloaderStartedAt = Date.now();
 const welcomeWords = ['Welcome', 'स्वागत है', 'স্বাগতম', 'Bienvenue', 'Bienvenido', 'ようこそ'];
@@ -49,189 +49,137 @@ window.addEventListener('load', function(){
         }, 1000);
     }, remainingWelcomeTime);
 });
-// iTyped 
 
-window.ityped.init(document.querySelector('.iTyped'), {
-    strings: ["I'm a Physics Graduate", 'I Love Computers', 'I Love Python', 'I Love Linux', 'I Love Condensed Matter Physics'],
-    loop: true
-});
-
-// Gallery Item Filter
-
-const filterContainer = document.querySelector('.gallery-filter'),
-    filterBtns = filterContainer.children,
-    totalFilterBtn = filterBtns.length,
-    galleryItems = document.querySelectorAll('.gallery-item'),
-    totalGalleryItem = galleryItems.length;
-    
-    for (let i = 0; i < totalFilterBtn; i++) {
-        filterBtns[i].addEventListener("click", function(){
-            filterContainer.querySelector('.active').classList.remove('active');
-            this.classList.add("active");
-
-            const filterValue = this.getAttribute('data-filter');
-            for (let k = 0; k < totalGalleryItem; k++) {
-                if (filterValue === galleryItems[k].getAttribute('data-category')) {
-                    galleryItems[k].classList.remove('hide');
-                    galleryItems[k].classList.add('show');
-                } else{
-                    galleryItems[k].classList.remove('show');
-                    galleryItems[k].classList.add('hide');
-                }
-                if (filterValue === 'all') {
-                    galleryItems[k].classList.remove('hide');
-                    galleryItems[k].classList.add('show');
-                }
-            }
-        });
-    }
-
-// Gallery Lighbox
-
-const lightbox = document.querySelector('.lightbox'),
-    lightboxImg = lightbox.querySelector('.lightbox-img'),
-    lightboxText = lightbox.querySelector('.caption-text'),
-    lightboxClose = lightbox.querySelector('.lightbox-close'),
-    lightboxCounter = lightbox.querySelector('.caption-counter');
-
-
-let itemIndex = 0;
-
-for (let i = 0; i < totalGalleryItem; i++) {
-    galleryItems[i].addEventListener('click', function(){
-        itemIndex = i;
-        changeItem();
-        toggleLightbox();
+// iTyped (only on home page)
+if (document.querySelector('.iTyped')) {
+    window.ityped.init(document.querySelector('.iTyped'), {
+        strings: ["I'm a Physics Graduate", 'I Love Computers', 'I Love Python', 'I Love Linux', 'I Love Condensed Matter Physics'],
+        loop: true
     });
 }
 
-function toggleLightbox() {
-    lightbox.classList.toggle('open');
-}
-
-function changeItem() {
-    let imgSrc = galleryItems[itemIndex].querySelector('.gallery-img img').getAttribute('src');
-    lightboxImg.src = imgSrc;
-    lightboxText.innerHTML = galleryItems[itemIndex].querySelector('h4').innerHTML;
-    lightboxCounter.innerHTML = (itemIndex + 1) + " of " + totalGalleryItem;
-}
-
-function prevItem() {
-    if (itemIndex === 0) {
-        itemIndex = totalGalleryItem - 1;
-    } else {
-        itemIndex--;
-    }
-    changeItem();
-}
-
-function nextItem() {
-    if (itemIndex === totalGalleryItem - 1) {
-        itemIndex = 0;
-    } else {
-        itemIndex++;
-    }
-    changeItem();
-}
-
-// close lightbox
-
-lightbox.addEventListener('click', function(event){
-    if(event.target === lightboxClose || event.target === lightbox){
-        toggleLightbox();
-    }
-});
-
-// Aside Navbar
-
-const nav = document.querySelector('.nav'),
-    navList = nav.querySelectorAll('li'),
-    totalNavList = navList.length,
-    allSection = document.querySelectorAll('.section'),
-    totalSection = allSection.length;
-
-for (let i = 0; i < totalNavList; i++) {
-    const a = navList[i].querySelector('a');
-    a.addEventListener('click', function(){
-        // remove back section class
-        removeBackSectionClass();
-
-        for (let j = 0; j < totalNavList; j++) {
-            if (navList[j].querySelector('a').classList.contains('active')) {
-                // add back section class
-                addBackSectionClass(j);
-            }
-            navList[j].querySelector('a').classList.remove('active');
-        }
-
-        this.classList.add('active');
-
-        showSection(this);
-
-        if (window.innerWidth < 1200) {
-            asideSectionTogglerBtn();
-        }
-
-    });
-}
-
-function addBackSectionClass(num) 
-{
-    allSection[num].classList.add('back-section');
-}
-
-function removeBackSectionClass() 
-{
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.remove('back-section');
-    }
-}
-
-function updateNav(element) 
-{
-    for (let i = 0; i < totalNavList; i++) {
-        navList[i].querySelector('a').classList.remove('active');
-        const target = element.getAttribute('href').split('#')[1];
-        if (target === navList[i].querySelector('a').getAttribute('href').split('#')[1]) {
-            navList[i].querySelector('a').classList.add('active');
-        }
-    }
-}
-
-document.querySelector('.hire-me').addEventListener('click', function(){
-    const sectionIndex = this.getAttribute('data-section-index');
-    addBackSectionClass(sectionIndex);
-    showSection(this);
-    updateNav(this);
-    removeBackSectionClass();
-});
-
-function showSection(element) 
-{
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.remove('active');
-    }
-
-    const target = element.getAttribute('href').split('#')[1];
-
-    document.querySelector('#'+target).classList.add('active');
-}
-
+// Mobile Nav Toggler
 const navTogglerBtn = document.querySelector('.nav-toggler'),
     aside = document.querySelector('.aside');
 
-navTogglerBtn.addEventListener('click', asideSectionTogglerBtn);
-
-function asideSectionTogglerBtn() 
-{
-    aside.classList.toggle('open');
-    navTogglerBtn.classList.toggle('open');
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.toggle('open');
-    }
+if (navTogglerBtn && aside) {
+    navTogglerBtn.addEventListener('click', function() {
+        aside.classList.toggle('open');
+        navTogglerBtn.classList.toggle('open');
+        // Toggle open on all sections so they shift right on mobile
+        document.querySelectorAll('.section').forEach(function(section) {
+            section.classList.toggle('open');
+        });
+    });
 }
 
-// AI Arts Lightbox
+// Gallery Item Filter & Lightbox (only on gallery.html)
+function initGallery() {
+    const filterContainer = document.querySelector('.gallery-filter-bar');
+    const galleryGrid = document.getElementById('galleryGrid');
+    const galleryLightbox = document.getElementById('galleryLightbox');
+    
+    if (!filterContainer || !galleryGrid) return;
+
+    // Filter Logic
+    const filterBtns = filterContainer.querySelectorAll('.filter-pill');
+    let galleryItems = Array.from(galleryGrid.querySelectorAll('.gallery-card'));
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterContainer.querySelector('.active').classList.remove('active');
+            this.classList.add('active');
+
+            const filterValue = this.getAttribute('data-filter');
+            galleryItems.forEach(item => {
+                if (filterValue === 'all' || filterValue === item.getAttribute('data-category')) {
+                    item.classList.remove('hide');
+                    item.classList.add('show');
+                } else {
+                    item.classList.remove('show');
+                    item.classList.add('hide');
+                }
+            });
+        });
+    });
+
+    // Lightbox Logic
+    if (galleryLightbox) {
+        const glbImg = document.getElementById('glbImg');
+        const glbTitle = document.getElementById('glbTitle');
+        const glbCounter = document.getElementById('glbCounter');
+        const glbClose = document.getElementById('glbClose');
+        const glbPrev = document.getElementById('glbPrev');
+        const glbNext = document.getElementById('glbNext');
+        
+        let currentItemIndex = 0;
+        let visibleItems = [];
+
+        function updateVisibleItems() {
+            visibleItems = Array.from(galleryGrid.querySelectorAll('.gallery-card')).filter(item => !item.classList.contains('hide'));
+        }
+
+        function openLightbox(index) {
+            updateVisibleItems();
+            currentItemIndex = index;
+            updateLightboxContent();
+            galleryLightbox.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            galleryLightbox.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function updateLightboxContent() {
+            if (visibleItems.length === 0) return;
+            const item = visibleItems[currentItemIndex];
+            const img = item.querySelector('img');
+            const title = item.querySelector('h4');
+            
+            if(img) glbImg.src = img.src;
+            glbTitle.textContent = title ? title.textContent : '';
+            glbCounter.textContent = `${currentItemIndex + 1} of ${visibleItems.length}`;
+        }
+
+        function prevImage() {
+            currentItemIndex = (currentItemIndex === 0) ? visibleItems.length - 1 : currentItemIndex - 1;
+            updateLightboxContent();
+        }
+
+        function nextImage() {
+            currentItemIndex = (currentItemIndex === visibleItems.length - 1) ? 0 : currentItemIndex + 1;
+            updateLightboxContent();
+        }
+
+        // Attach event listener to grid to catch clicks on any card (even dynamically added ones)
+        galleryGrid.addEventListener('click', function(e) {
+            const card = e.target.closest('.gallery-card');
+            if (card) {
+                updateVisibleItems();
+                const index = visibleItems.indexOf(card);
+                if (index > -1) {
+                    openLightbox(index);
+                }
+            }
+        });
+
+        glbClose.addEventListener('click', closeLightbox);
+        glbPrev.addEventListener('click', prevImage);
+        glbNext.addEventListener('click', nextImage);
+        
+        galleryLightbox.addEventListener('click', function(e) {
+            if (e.target.classList.contains('glb-backdrop')) {
+                closeLightbox();
+            }
+        });
+    }
+}
+initGallery();
+window.initGallery = initGallery;
+
+// AI Arts Lightbox (only on ai-arts.html)
 const aiArtsLightbox = document.querySelector('.ai-arts-lightbox'),
     aiArtsLightboxImg = aiArtsLightbox ? aiArtsLightbox.querySelector('.ai-arts-lightbox-img') : null,
     aiArtsLightboxText = aiArtsLightbox ? aiArtsLightbox.querySelector('.ai-arts-caption-text') : null,
@@ -259,7 +207,7 @@ if (aiArtsLightbox) {
     function aiArtsChangeItem() {
         let imgSrc = aiArtsItems[aiArtsItemIndex].querySelector('.ai-arts-img img').getAttribute('src');
         if(aiArtsLightboxImg) aiArtsLightboxImg.src = imgSrc;
-        if(aiArtsLightboxText) aiArtsLightboxText.innerHTML = ""; // Remove the AI Art name
+        if(aiArtsLightboxText) aiArtsLightboxText.innerHTML = "";
         if(aiArtsLightboxCounter) aiArtsLightboxCounter.innerHTML = (aiArtsItemIndex + 1) + " of " + aiArtsTotalItems;
         if(aiArtsDownloadButton) aiArtsDownloadButton.href = imgSrc;
     }
@@ -273,8 +221,8 @@ if (aiArtsLightbox) {
         }
     });
 }
-// Resources Animation
 
+// Resources Animation
 const resourceItems = document.querySelectorAll('.resource-item');
 resourceItems.forEach(item => {
   item.addEventListener('mouseover', () => {
