@@ -65,10 +65,15 @@
 
 /* Dark Body */
 
-body.dark .section{
+body.dark,
+body.dark .section {
     background-color: #151515;
+    background-image: none;
 }
 body.dark .aside,
+body.dark .aside .nav-toggler,
+body.dark .style-switcher,
+body.dark .style-switcher .toggle-style-switcher,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .blog .blog-item-inner .blog-info,
 body.dark .service .service-item .service-item-inner,
@@ -83,6 +88,7 @@ body.dark .aside .nav li a,
 body.dark .blog .blog-item-inner .blog-info .blog-title,
 body.dark .contact .contact-info-item h4,
 body.dark .gallery .gallery-filter button,
+body.dark .filter-pill,
 body.dark .service .service-item .service-item-inner h4,
 body.dark .about .about-content .timeline .timeline-title,
 body.dark .about .about-content .skills .skill-item h5,
@@ -92,6 +98,9 @@ body.dark .home .intro h1,
 body.dark .about .about-content h3.title,
 body.dark .section-title h2,
 body.dark .aside .logo a,
+body.dark .style-switcher h5,
+body.dark .style-switcher label,
+body.dark .style-switcher .toggle-style-switcher .fa,
 body.dark .dl-title,
 body.dark .res-card-title {
     color: #ffffff;
@@ -113,6 +122,10 @@ body.dark .res-projects-list li {
 }
 body.dark .about .about-content .personal-info .info-item p,
 body.dark .aside,
+body.dark .aside .nav-toggler,
+body.dark .style-switcher,
+body.dark .style-switcher .toggle-style-switcher,
+body.dark .style-switcher h5,
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .blog .blog-item-inner,
 body.dark .gallery .gallery-item-innner,
@@ -130,6 +143,12 @@ body.dark .dl-btn.dl-btn-outline {
 body.dark .shadow-dark{
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+body.dark .filter-pill {
+    background: rgba(255, 255, 255, 0.08);
+}
+body.dark .gallery-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 /* Downloads library: dark theme */
 body.dark .downloads-heading { background: linear-gradient(115deg, #222222 0%, #2a2026 100%); border-color: #393939; }
