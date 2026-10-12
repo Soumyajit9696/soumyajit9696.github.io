@@ -1,7 +1,7 @@
 # soumyajitdas
 # Personal Portfolio Website - Soumyajit Das
 
-[![Website Preview](https://www.soumyajit-das.tech/images/abtt.png)](https://www.soumyajit-das.tech)
+[![Website Preview](https://soumyajit9696.github.io/images/abtt.png)](https://soumyajit9696.github.io/)
 
 ## 🌟 About This Project
 
