@@ -1,6 +1,6 @@
 # Soumyajit Das — Personal Portfolio
 
-[![Website Preview](https://soumyajit9696.github.io/images/abtt.png)](https://soumyajit9696.github.io/)
+<img width="1913" height="927" alt="image" src="https://github.com/user-attachments/assets/dc946a9c-d260-4db1-b949-5b4158413722" />
 
 <p align="center">
   <a href="https://soumyajit9696.github.io/">
