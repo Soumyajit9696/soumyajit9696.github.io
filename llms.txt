@@ -1,0 +1,48 @@
+# Soumyajit Das — Personal Portfolio
+
+> Physics researcher and scientific software developer. M.Sc. Physics student at NIT Silchar
+> specialising in density functional theory (DFT) of 2D materials. Creator of VaspViz and WallPrx.
+> This file guides AI agents through the site at https://soumyajit9696.github.io/.
+
+## Profile
+- Name: Soumyajit Das
+- Role: Physics Researcher & Scientific Software Developer
+- Location: Silchar, Assam, India
+- Email: dsoumyajit295@gmail.com
+- Education: M.Sc. Physics (Applied), NIT Silchar (2024–2026); B.Sc. Physics (Hons), University of Calcutta (2020–2023, CGPA 8.11)
+- Research: Density functional theory, transition-metal dichalcogenides (TMDs), optoelectronic properties, condensed matter physics
+- Internship: IISER Kolkata, SSPL Lab under Prof. Satyabrata Raj (May–July 2025)
+
+## Projects
+- M.Sc. project report: ab-initio DFT study of monolayer and bilayer ZrS2 and ZrSe2 (NIT Silchar, Dept. of Physics, 2026) — leads the Projects page as a featured card: details left, front-page cover right
+- Summer internship report: first-principles DFT calculations on crystalline materials with VASP and Elk (IISER Kolkata, Dept. of Physical Sciences, 2025) — second featured card on the Projects page
+- VaspViz: cross-platform PyQt6 desktop suite for post-processing VASP output — band structures, DOS, fat bands, Wannier90 overlays, optical spectra, 3D POSCAR viewer, CHGCAR rendering, EOS fitting, convergence monitoring. Python, PyQt6, Matplotlib, NumPy, SciPy. https://github.com/Soumyajit9696/VaspViz
+- WallPrx: minimal, ad-free wallpaper discovery platform for high-resolution desktop and mobile wallpapers. HTML, CSS, JavaScript. https://github.com/Soumyajit9696/WallPrx
+- Theorem: LaTeX equation editor and image generator (web + desktop). https://sci-tech-science.blogspot.com/2026/10/theorem-latex-equation-editor.html
+
+## Pages
+- [Home](https://soumyajit9696.github.io/): introduction, featured projects, latest blog posts
+- [About](https://soumyajit9696.github.io/about.html): bio text beside a real interactive terminal (type help, whoami, research, projects, theme...), at-a-glance stats, education, research experience, beyond physics
+- [Skills](https://soumyajit9696.github.io/skills.html): interactive periodic table of tools — 11 elements plus 6 alloy cells, domain colours, click or arrow-key selection with a live detail panel and domain filters
+- [Projects](https://soumyajit9696.github.io/projects.html): research first — the M.Sc. project (NIT Silchar) and IISER Kolkata summer internship reports as featured cards with front-page covers and a lightbox, then VaspViz, WallPrx and Theorem in detail (built with help from AI coding assistants)
+- [Gallery](https://soumyajit9696.github.io/gallery.html): B.Sc memory, NIT Diary, physics and travel photos
+- [Blog](https://soumyajit9696.github.io/blog.html): science and technology articles from Sci-Tech Science
+- [Resources](https://soumyajit9696.github.io/resources.html): physics notes, a 48-book bookshelf (12 books per topic: Physics, Theory, Materials, Programming) with search and topic filters, playlist player (seek & volume)
+
+## Downloads
+- Curriculum Vitae (PDF): https://soumyajit9696.github.io/docs/SOUMYAJIT_DAS_CV.pdf
+- Physics notes (Google Drive): https://drive.google.com/drive/folders/1kgAgFtQFkJ_OmzYGRMNfcHJSnyEhJSwa
+
+## Links
+- GitHub: https://github.com/Soumyajit9696
+- LinkedIn: https://www.linkedin.com/in/soumyajit-das-40a1851b8/
+- Blog: https://sci-tech-science.blogspot.com/
+
+## Interactive features (all pages)
+- Tools dock (bottom-right "Tools" button): draggable clock, BibTeX citation, links, feedback (opens mail app)
+- Atom Orbiter cursor (desktop only): the pointer is a live atom - nucleus dot at the true pointer, three precessing elliptical orbits on a damped spring (length contraction while moving), electrons whose spin follows the pointer's kinetic energy, a comet particle wake (additive glow in dark mode), excited energy state over links (expanded accent shells + spectrum electrons), cooling idle state, photon rings + particle burst on click. The system sits exactly under the pointer and the native OS cursor is fully hidden. Press Shift+R for a reading guide, Shift+M for an on-screen caliper (px/cm/degrees; status chip + auto-clear after the second point), Esc to clear
+- Welcome note: first homepage visit per session shows a greeting card with a time-of-day title (Good morning/afternoon/evening/night, visitor!), a live clock chip and a matching well-wish (dialog with Esc/backdrop close)
+
+## Optional
+- llms-full.txt: complete site content for AI agents at https://soumyajit9696.github.io/llms-full.txt
+- sitemap.xml: https://soumyajit9696.github.io/sitemap.xml

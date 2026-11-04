@@ -1,0 +1,13 @@
+{
+  "name": "Soumyajit Das — Portfolio",
+  "short_name": "Soumyajit",
+  "description": "Physics researcher and scientific software developer. Creator of VaspViz and WallPrx.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F2",
+  "theme_color": "#101014",
+  "icons": [
+    { "src": "favicon/favicon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "favicon/favicon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

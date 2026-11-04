@@ -1,0 +1,33 @@
+# This CITATION.cff file lets GitHub show a "Cite this repository"
+# button (APA + BibTeX) on the repo homepage.
+cff-version: 1.2.0
+message: >-
+  If you use or reference this portfolio — its code, design or content —
+  please cite it using the metadata below.
+title: 'Soumyajit Das — Personal Portfolio Website'
+authors:
+  - family-names: Das
+    given-names: Soumyajit
+    email: dsoumyajit295@gmail.com
+type: software
+repository-code: 'https://github.com/Soumyajit9696/soumyajit9696.github.io'
+url: 'https://soumyajit9696.github.io/'
+abstract: >-
+  Source of the personal portfolio website of Soumyajit Das, M.Sc. Physics
+  postgraduate at NIT Silchar — first-principles (DFT) research on 2D
+  materials, scientific software (VaspViz), skills, gallery, blog feed and a
+  48-book physics & programming bookshelf. A zero-dependency static site in a
+  minimal neobrutalist style: vanilla HTML/CSS/JS, dark mode, an interactive
+  terminal, physics-themed cursor effects and AI-friendly llms.txt metadata.
+keywords:
+  - portfolio
+  - personal-website
+  - physics
+  - dft
+  - materials-science
+  - scientific-software
+  - vanilla-javascript
+  - github-pages
+license: MIT
+version: 1.0.0
+date-released: '2026-11-04'

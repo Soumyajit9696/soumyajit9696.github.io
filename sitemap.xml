@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://soumyajit9696.github.io/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/abtt.webp</image:loc>
+      <image:title>Soumyajit Das - Physics Researcher &amp; Scientific Software Developer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://soumyajit9696.github.io/about.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/about.webp</image:loc>
+      <image:title>About Soumyajit Das</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://soumyajit9696.github.io/skills.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/abtt.webp</image:loc>
+      <image:title>Skills &amp; Tools</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://soumyajit9696.github.io/projects.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/vaspviz_logo.webp</image:loc>
+      <image:title>Projects - VaspViz &amp; WallPrx</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://soumyajit9696.github.io/gallery.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/trnss.webp</image:loc>
+      <image:title>Gallery - Moments, People &amp; Places</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://soumyajit9696.github.io/blog.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/blog/theorem.webp</image:loc>
+      <image:title>Blog - Sci-Tech Science</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://soumyajit9696.github.io/resources.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://soumyajit9696.github.io/images/abtt.webp</image:loc>
+      <image:title>Resources - CV, Notes &amp; Study Material</image:title>
+    </image:image>
+  </url>
+</urlset>

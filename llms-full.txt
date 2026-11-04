@@ -1,0 +1,261 @@
+# Soumyajit Das — Personal Portfolio: Full Site Content
+
+> Complete content of https://soumyajit9696.github.io/ for AI agents and LLMs.
+> The portfolio of Soumyajit Das: physics researcher (DFT, 2D materials) and scientific
+> software developer (VaspViz, WallPrx). Design: minimal neobrutalism, static HTML site.
+
+==================================================================
+PAGE: Home — https://soumyajit9696.github.io/
+TITLE: Soumyajit Das — Physics Researcher & Scientific Software Developer
+DESCRIPTION: Official portfolio of Soumyajit Das — M.Sc. Physics researcher at NIT Silchar working on DFT and 2D materials, and creator of VaspViz. Explore my research, projects, writing and resources.
+==================================================================
+
+# Soumyajit Das
+I study 2D materials with quantum simulations — and build the software that makes that research faster.
+
+[Explore my projects] -> projects.html
+[About me] -> about.html
+## What I do
+### DFT Research
+First-principles studies of 2D materials — band structures, density of states and optical spectra with VASP.
+
+### Scientific Software
+Research tools and desktop apps in Python — NumPy, SciPy and PyQt6 — including VaspViz, my flagship project.
+
+### Science Writing
+Clear explainers on physics and maths for Sci-Tech Science, plus curated notes and resources for students.
+
+## Featured projects
+### VaspViz
+A cross-platform PyQt6 desktop app that turns raw VASP output into publication-ready figures — band structures, DOS, optical spectra and more — with zero scripting.
+
+Band structure · DOS · Fat bands · Optical spectra · 3D viewer
+
+### WallPrx
+A fast, distraction-free platform for discovering high-resolution desktop and mobile wallpapers — curated, ad-free and built mobile-first.
+
+## Latest writing
+All articles
+
+## Let's talk physics, code or collaboration.
+Open to research collaborations, internships and interesting problems.
+
+==================================================================
+PAGE: About — https://soumyajit9696.github.io/about.html
+TITLE: About Soumyajit Das — Physics, Code & Materials Research
+DESCRIPTION: M.Sc. Physics researcher at NIT Silchar specialising in DFT of 2D materials. Education, research experience and the story so far — a physics postgraduate who codes.
+==================================================================
+
+# Physics, code, and the physics of materials
+I study how matter behaves one atom at a time — and I build the software that makes that research faster for everyone.
+
+## The short version
+## Hello! I'm Soumyajit, a physics postgraduate who codes
+I'm a Physics postgraduate at the National Institute of Technology Silchar, specialising in computational condensed matter physics. My current research uses density functional theory to study two-dimensional materials — probing their band structures, optical response and potential for optoelectronic applications.
+
+Beyond research, I'm an active scientific software developer. I created VaspViz , a PyQt6 desktop suite for post-processing VASP calculations, along with several smaller tools — because I believe good software should shave hours off a researcher's week.
+
+When I'm not parsing vasprun.xml files, you'll find me exploring Linux, writing about science on my blog, or following football. The fastest way to reach me is dsoumyajit295@gmail.com Copy .
+
+The hero pairs the bio text with a real interactive terminal: it auto-types an intro, then accepts keyboard input (help, whoami, research, projects, education, skills, contact, cv, theme, date, echo, history, clear; Up/Down history, Tab completion, clickable links in output).
+
+[Download CV] -> docs/SOUMYAJIT_DAS_CV.pdf
+[LinkedIn] -> https://www.linkedin.com/in/soumyajit-das-40a1851b8/
+## At a glance
+## Education
+- 2024 – 2026 M.Sc. in Physics — NIT Silchar Specialising in theoretical and computational physics, with coursework and research across condensed matter physics, materials science and numerical methods — alongside my dissertation research on 2D materials.
+### M.Sc. in Physics — NIT Silchar
+- 2020 – 2023 B.Sc. Physics (Hons) — University of Calcutta Graduated with a CGPA of 8.11, building strong foundations in classical mechanics, quantum mechanics, electromagnetism and statistical physics.
+### B.Sc. Physics (Hons) — University of Calcutta
+- 2012 – 2020 Higher Secondary — WBCHSE Completed higher secondary education with a score of 480/500, reflecting an early and consistent commitment to the sciences.
+### Higher Secondary — WBCHSE
+## Research experience
+- 2025 – Present M.Sc. Dissertation — DFT of TMDs First-principles study of transition-metal dichalcogenides for optoelectronic applications: band structures, density of states and optical spectra computed with VASP.
+### M.Sc. Dissertation — DFT of TMDs
+- May – Jul 2025 Summer Intern — IISER Kolkata Worked in the SSPL Lab under Prof. Satyabrata Raj in the Department of Physical Sciences, gaining hands-on experience with experimental surface-physics techniques.
+### Summer Intern — IISER Kolkata
+## Beyond physics
+### Football
+Weekends belong to Manchester City in the Premier League and Mohun Bagan back home in Kolkata.
+
+### Science writing
+Clear explainers on physics and maths — from Euler's identity to the equations that changed science.
+
+### Linux & the hills
+Tinkering with Linux and open-source software between calculations — and escaping to the mountains whenever the schedule allows.
+
+==================================================================
+PAGE: Skills — https://soumyajit9696.github.io/skills.html
+TITLE: Skills & Tools — Soumyajit Das | Python, DFT/VASP, Linux
+DESCRIPTION: The research toolkit of Soumyajit Das: Python, NumPy, SciPy, DFT with VASP, LaTeX, Blender, Linux and web development — built for scientific computing.
+==================================================================
+
+# The periodic table of my toolkit
+Every tool arranged as a periodic table: 11 elements plus 6 alloy cells (Git, VS Code, Matplotlib, pyqtgraph, Jupyter, Bash). Click an element or walk the table with arrow keys to inspect it in a live detail panel; filter by domain (Scientific Computing, Research, Visualization, Documentation, Web & Dev, Systems).
+
+## Table of tools
+Interactive periodic table by domain, each element carrying a proficiency meter:
+
+### Python (Core · Advanced)
+Data analysis, scripting and scientific computing — the primary language of my research.
+
+### NumPy (Core · Advanced)
+Vectorised numerics — the backbone of my band-structure and DOS pipelines.
+
+### SciPy (Core · Advanced)
+Optimisation, interpolation and curve fitting for research workflows.
+
+### DFT / VASP (Research · Advanced)
+First-principles simulations — from INCAR/POSCAR setup to band and optical analysis.
+
+### Origin Pro (Research · Advanced)
+Publication-quality plotting and peak analysis for research data.
+
+### Blender (Visualization · Intermediate)
+3D rendering and scientific illustration for figures and concepts.
+
+### LaTeX (Documentation · Advanced)
+Papers, reports and problem sets — plus LaTeX tooling like my Theorem editor.
+
+### PowerPoint (Documentation · Intermediate)
+Clear academic presentations — from seminars to conference talks.
+
+### HTML / CSS / JS (Web & Dev · Intermediate)
+Fast, accessible websites and web tools — like this portfolio.
+
+### Linux (Systems · Advanced)
+Ubuntu, CentOS & Mint — daily drivers for research computing and tinkering.
+
+### Windows (Systems · Advanced)
+Desktop administration, WSL2 Linux integration and cross-platform apps.
+
+## Also in the toolbox
+Git · VS Code · Matplotlib · pyqtgraph · Jupyter · Bash
+
+==================================================================
+PAGE: Projects — https://soumyajit9696.github.io/projects.html
+TITLE: Projects — Soumyajit Das | Research & Software
+DESCRIPTION: Physics first: the M.Sc. project — an ab-initio DFT study of monolayer and bilayer ZrS2 and ZrSe2 at NIT Silchar — and the IISER Kolkata summer internship report on first-principles DFT calculations, leading the software Soumyajit Das built: VaspViz, WallPrx and Theorem.
+==================================================================
+
+# Research first, then the tools
+I'm a Physics M.Sc. student first — so this page opens with the two reports behind my degree: the ab-initio DFT study of ZrS 2 and ZrSe 2 for NIT Silchar, and a summer of first-principles calculations at IISER Kolkata. The software I build to speed that kind of research up follows below.
+
+## Research Reports
+Two documents, two institutions — the dissertation and the internship my Physics M.Sc. stands on. Click a cover to read the front page up close.
+
+### Ab-initio DFT study of monolayer & bilayer ZrS 2 and ZrSe 2
+My M.Sc. dissertation: a density-functional theory study of the two-dimensional transition-metal dichalcogenides ZrS 2 and ZrSe 2 — from relaxed crystal structures through to band structures and density of states. The through-line is the monolayer–bilayer comparison: what a second layer, and the van der Waals gap it opens between the two, does to a 2D material's electronic structure.
+
+Structural relaxation · Band structure · Density of states · Monolayer vs bilayer · Interlayer vdW gap · 2D TMDs
+
+VASP · Ab-initio DFT · 2D materials
+
+### First-Principles DFT Calculations on Crystalline Materials
+The report of my summer at the Department of Physical Sciences, IISER Kolkata (May–July 2025): first-principles calculations on crystalline materials, worked through two codes — plane-wave VASP and the all-electron Elk. Total energies, relaxed geometries, band structures and density of states: the full pipeline from a raw crystal structure to physics you can plot.
+
+Total energies · Relaxed geometries · Band structure · Density of states · Two-code workflow
+
+VASP · Elk · First-principles DFT · Summer 2025
+
+## Software Projects
+Tools I built so that research — mine and everyone else's — moves faster.
+
+Built with help from AI: developed with AI coding assistants as a pair-programmer for boilerplate, debugging and documentation, while the physics, architecture and final decisions stayed mine.
+
+### VaspViz
+A cross-platform desktop application I built with PyQt6 for analyzing and visualizing VASP (Vienna Ab initio Simulation Package) output. VaspViz turns raw first-principles data into publication-ready figures — band structures, density of states, optical spectra and more — without writing a single line of script. What used to be an afternoon of matplotlib plumbing becomes a few clicks.
+
+Band structure · DOS · Fat bands · Wannier90 · Optical spectra · 3D POSCAR viewer · CHGCAR rendering · EOS fitting · Convergence monitor
+
+Python · PyQt6 · Matplotlib · NumPy · SciPy · pyqtgraph
+
+### WallPrx
+A fast, distraction-free platform for discovering high-resolution desktop and mobile wallpapers. Curated collections, instant preview and one-click download — a clean, ad-free experience built with a mobile-first responsive interface.
+
+Curated collections · Instant preview · One-click download · 4K & mobile · Ad-free · Mobile-first UI
+
+HTML5 · CSS3 · JavaScript · Responsive UI
+
+### Theorem
+A clean, modern equation editor for students, teachers and researchers: type LaTeX, see perfectly typeset maths instantly, and export it as a crisp image for assignments, papers and slides. No clutter — just beautiful equations, the moment you finish typing them.
+
+Live rendering · Crisp image export · Fractions, matrices & align · Assignments, papers & slides
+
+LaTeX · Web app · Works in the browser
+
+## Have an idea or found a bug?
+Both projects are open source — issues, ideas and pull requests are welcome.
+
+==================================================================
+PAGE: Gallery — https://soumyajit9696.github.io/gallery.html
+TITLE: Gallery — Soumyajit Das | Moments, People & Places
+DESCRIPTION: Photos from the journey of Soumyajit Das — college days at Calcutta University and NIT Silchar, research visits, mountain trips and the legendary physicists.
+==================================================================
+
+# Moments, people & places
+A few frames from the journey — B.Sc and M.Sc days, research visits, the mountains, and the physicists whose work inspired it all.
+
+==================================================================
+PAGE: Blog — https://soumyajit9696.github.io/blog.html
+TITLE: Blog — Soumyajit Das | Sci-Tech Science
+DESCRIPTION: Science writing by Soumyajit Das on Sci-Tech Science: physics explainers, mathematics, LaTeX tooling and computational research notes.
+==================================================================
+
+# Writing about science & technology
+Notes on physics, mathematics and the tools I build — written for students, teachers and the endlessly curious.
+
+## Latest posts
+### Theorem: A Modern LaTeX Equation Editor for Students, Teachers and Researchers
+Clean, professional equations for assignments, papers and presentations — how I built Theorem, a live LaTeX editor that renders maths instantly and exports it as crisp images.
+
+### The Most Beautiful Equation in Mathematics
+Euler's identity links five fundamental constants in a single line. A look at why physicists and mathematicians call it the most beautiful equation ever written.
+
+### Top 5 Revolutionary Physics Equations
+From Newton to Schrödinger — five equations that reshaped how we understand the universe, and the stories of the people who wrote them.
+
+## About the blog
+Sci-Tech Science is my Blogger-hosted corner of the internet, running since 2024. Expect physics explainers without the jargon, mathematics with actual intuition, and behind-the-scenes stories of the tools I build — like Theorem, the LaTeX equation editor.
+
+[Read all posts] -> https://sci-tech-science.blogspot.com/
+==================================================================
+PAGE: Resources — https://soumyajit9696.github.io/resources.html
+TITLE: Resources — Soumyajit Das | Notes & Study Material
+DESCRIPTION: Free downloads from Soumyajit Das: physics notes and a curated 48-book physics and programming bookshelf, plus a small coding playlist.
+==================================================================
+
+# Stuff I share
+Physics notes and a curated bookshelf — 48 free books, 12 per topic — plus a small playlist that keeps me company while I code. Looking for software? My projects have their own home now.
+
+## Downloads & Study Material
+### Physics Notes
+Curated notes on quantum mechanics, solid-state physics and computational methods — cleaned up and free to read.
+
+[Open Drive] -> https://drive.google.com/drive/folders/1kgAgFtQFkJ_OmzYGRMNfcHJSnyEhJSwa?usp=sharing
+### Physics & Programming Bookshelf
+A curated collection of physics references, Python books and study material — free for students.
+
+[Browse Collection] -> https://drive.google.com/drive/folders/1kgAgFtQFkJ_OmzYGRMNfcHJSnyEhJSwa?usp=sharing
+
+Bookshelf grid: 48 books, 12 per topic (Physics · Theory · Materials · Programming), searchable by title/author/topic, each opening the shared Drive collection.
+## While You're Here — My Playlist
+### Hall of Fame
+The Script ft. will.i.am
+
+==================================================================
+PAGE: 404 — https://soumyajit9696.github.io/404.html
+TITLE: Page Not Found — Soumyajit Das
+DESCRIPTION: The page you're looking for doesn't exist. Head back to the home page of Soumyajit Das.
+==================================================================
+
+# This page drifted out of the Brillouin zone.
+The page you're looking for doesn't exist — it may have moved, been renamed, or it was never in this k-space to begin with.
+
+[Back to Home] -> index.html
+[View Projects] -> projects.html
+
+==================================================================
+NAVIGATION: Home / About / Skills / Projects / Gallery / Blog / Resources
+SIDEBAR ORDER: Home, About, Skills, Projects, Gallery, Blog, Resources
+==================================================================
