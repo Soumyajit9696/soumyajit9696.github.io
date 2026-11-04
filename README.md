@@ -63,7 +63,7 @@ Add your own screenshots to the `screenshots/` folder and update the filenames b
   <sub>Projects · Research, software and selected work</sub>
   <br /><br />
   <h3>Gallery &amp; resources</h3>
-  <img src="screenshots/gallery-resources.png" alt="Gallery and resources screenshot — add screenshots/gallery-resources.png" width="900" />
+  <img src="screenshots/gallery-resources.png" alt="Gallery and resources screenshot — add screenshots/gallery.png" width="900" />
   <sub>Gallery and resources · Visuals, notes and useful links</sub>
 </div>
 
