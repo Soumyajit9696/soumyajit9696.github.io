@@ -1,194 +1,240 @@
-# Personal Portfolio Website Template
-
-A responsive, multi-page personal portfolio built with **vanilla HTML, CSS and JavaScript**. It uses a minimal neobrutalist visual style, sharp borders, offset shadows, a warm paper-inspired palette, and a set of interactive details.
-
-**Live demo:** [soumyajit9696.github.io](https://soumyajit9696.github.io/)  
-**Author:** [Soumyajit Das](https://github.com/Soumyajit9696)  
-**License:** MIT for the reusable source code (see [LICENSE](LICENSE))  
-**Dependencies:** None — no framework, package manager, or build step required.
-
-> This repository began as the source of my personal website. It is shared as a starting point for your own portfolio. Replace the personal information, images, documents, links, and other identifying content before publishing your copy.
+<div align="center">
+  <img src="favicon/favicon.svg" alt="Soumyajit Das logo" width="88" height="88" />
+  <h1>Soumyajit Das — Portfolio Template</h1>
+  <p><strong>A minimal neobrutalist portfolio for researchers, developers and curious minds.</strong></p>
+  <p>
+    <a href="https://soumyajit9696.github.io/"><strong>Live portfolio</strong></a>
+    ·
+    <a href="#-getting-started">Get started</a>
+    ·
+    <a href="#-customisation">Customise</a>
+    ·
+    <a href="#-showcase">Showcase</a>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/HTML5- vanilla-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+    <img src="https://img.shields.io/badge/CSS3-vanilla-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+    <img src="https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=111" alt="JavaScript" />
+    <img src="https://img.shields.io/badge/Dependencies-none-2E8B57?style=flat-square" alt="No dependencies" />
+    <img src="https://img.shields.io/badge/License-MIT-6C5CE7?style=flat-square" alt="MIT License" />
+  </p>
+  <p><sub>Built with plain HTML, CSS and JavaScript · No framework · No build step</sub></p>
+</div>
 
 ---
 
-## Preview
+## ✦ About the project
 
-Explore the [live website](https://soumyajit9696.github.io/) to see the design and interactions.
+This repository contains the source code for my personal portfolio and is shared as a starting point for anyone who wants to build a distinctive, responsive personal website.
 
-## Features
+The visual direction is **minimal neobrutalism**: crisp borders, confident typography, offset shadows, a warm paper-like background and a small set of vivid accent colours. The template is made with vanilla web technologies, so you can edit it directly without learning a framework or setting up a build pipeline.
 
-- **Multi-page layout:** Home, About, Skills, Projects, Gallery, Blog, Resources, and a custom 404 page.
-- **Responsive design:** Layouts adapt to desktop, tablet, and mobile screens.
-- **Light and dark themes:** Theme preference is saved locally in the browser.
-- **Custom visual identity:** Neobrutalist borders, offset shadows, typography, and colour system.
-- **Interactive details:** Animated atom cursor, physics-equation background effects, reading progress, and a floating tools dock.
-- **Portfolio sections:** Present your biography, education, skills, projects, publications, photographs, and contact details.
-- **Gallery:** Filterable image grid with a keyboard-friendly lightbox.
-- **Blog integration:** The blog page can display posts from Blogger.
-- **Resources section:** Share downloadable notes, documents, books, or other learning materials.
-- **SEO foundations:** Semantic HTML, page metadata, canonical URLs, Open Graph/Twitter metadata, structured data, sitemap, and robots file.
-- **Accessibility considerations:** Skip links, visible focus states, reduced-motion handling, and keyboard-accessible interactions.
-- **Static hosting:** Works with GitHub Pages or any ordinary static web host.
+> **Please make it your own.** Replace my name, biography, photos, projects, links and other personal content before publishing your version. See the [licensing notes](#-license--usage-rights) before reusing the included assets.
 
-## Pages
+## ✨ Features
+
+- Responsive multi-page layout for desktop, tablet and mobile.
+- Minimal neobrutalist visual system with light and dark themes.
+- Self-hosted Space Grotesk and Inter variable fonts.
+- Interactive navigation, theme switcher and colour palette.
+- Animated atom-style pointer on supported desktop devices.
+- Physics-inspired floating equations and visual effects.
+- Filterable project, skill, gallery and resource sections.
+- Keyboard-friendly image lightbox.
+- Floating tools dock with small utilities.
+- SEO metadata, sitemap, robots file, web manifest and favicon set.
+- GitHub Pages-friendly static files; no backend or build tools required.
+
+## 🖼️ Showcase
+
+Add your own screenshots to the `screenshots/` folder and update the filenames below. These image slots are intentionally provided as a showcase area—replace them with screenshots of the pages you want to feature.
+
+<div align="center">
+  <h3>Home</h3>
+  <img src="screenshots/home.png" alt="Homepage screenshot — add screenshots/home.png" width="900" />
+  <sub>Homepage · Hero, introduction and featured work</sub>
+  <br /><br />
+  <h3>About &amp; skills</h3>
+  <img src="screenshots/about-skills.png" alt="About and skills screenshot — add screenshots/about-skills.png" width="900" />
+  <sub>About · Background, interests and skills</sub>
+  <br /><br />
+  <h3>Projects</h3>
+  <img src="screenshots/projects.png" alt="Projects screenshot — add screenshots/projects.png" width="900" />
+  <sub>Projects · Research, software and selected work</sub>
+  <br /><br />
+  <h3>Gallery &amp; resources</h3>
+  <img src="screenshots/gallery-resources.png" alt="Gallery and resources screenshot — add screenshots/gallery-resources.png" width="900" />
+  <sub>Gallery and resources · Visuals, notes and useful links</sub>
+</div>
+
+## 📄 Pages included
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Landing page, introduction, featured work, and contact links |
-| `about.html` | Biography, education, experience, and personal interests |
-| `skills.html` | Skills, technologies, and tools |
-| `projects.html` | Research, software, and other projects |
-| `gallery.html` | Filterable photo gallery |
-| `blog.html` | Blog posts and external blog integration |
-| `resources.html` | Downloadable resources and bookshelf |
+| `index.html` | Homepage, introduction, featured projects and contact links |
+| `about.html` | Biography, education, research interests and personal interests |
+| `skills.html` | Filterable skills and areas of expertise |
+| `projects.html` | Research reports and software projects |
+| `gallery.html` | Filterable image gallery with a lightbox |
+| `blog.html` | Blog page with Blogger content integration |
+| `resources.html` | Learning resources, downloads, bookshelf and playlist |
 | `404.html` | Custom not-found page |
 
-## Getting started
+## 🧰 Tech stack
 
-You can create your own copy in either of these ways.
+| Technology | Use |
+| --- | --- |
+| HTML5 | Page structure and content |
+| CSS3 | Layout, responsive styling, themes and animations |
+| Vanilla JavaScript | Interactions and visual effects |
+| SVG / WebP | Icons, favicon and image assets |
+| GitHub Pages | Optional static hosting |
+
+There is no package manager, framework, bundler or compilation step.
+
+## 🚀 Getting started
 
 ### Option 1 — Use this repository as a template
 
-1. Open this repository on GitHub.
-2. Click **Use this template → Create a new repository**. If the button is unavailable, use the fork or clone method below.
-3. Choose an owner and repository name.
-   - For a GitHub user website, name it `YOUR-USERNAME.github.io`.
-   - For a project website, choose any repository name you like.
-4. Create the repository and clone it to your computer.
-5. Personalise the content and settings using the checklist below.
-6. Enable GitHub Pages (see [Deploy to GitHub Pages](#deploy-to-github-pages)).
+1. Open the repository on GitHub.
+2. Click **Use this template → Create a new repository**.
+3. Give your repository a name, such as `my-portfolio`.
+4. Clone your new repository to your computer:
 
-### Option 2 — Fork or clone
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+   cd YOUR-REPOSITORY
+   ```
 
-Fork the repository on GitHub, or clone it locally:
+### Option 2 — Fork the repository
 
-```bash
-git clone https://github.com/Soumyajit9696/soumyajit9696.github.io.git
-cd soumyajit9696.github.io
-```
+1. Click **Fork** at the top of the GitHub repository page.
+2. Clone your fork:
 
-If you publish a fork as your own website, make sure you replace the original owner's personal content and site metadata.
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/YOUR-FORK.git
+   cd YOUR-FORK
+   ```
 
-## Make it yours
+### Option 3 — Download the source
 
-The current version is a collection of static files rather than a configurable theme. Most personalisation is done by editing the HTML and replacing assets.
+Use **Code → Download ZIP** on GitHub, extract the archive, and open the project folder.
 
-### 1. Update your personal information
+### Preview locally
 
-Search across the HTML files and replace the author's name, biography, email address, social links, education, experience, skills, project descriptions, and other personal details.
-
-Pay particular attention to:
-
-- `index.html` — name, headline, introduction, featured projects, and contact links.
-- `about.html` — biography, education, experience, and interests.
-- `skills.html` — skill names, categories, and descriptions.
-- `projects.html` — project titles, descriptions, images, and links.
-- `gallery.html` — image paths, captions, and categories.
-- `blog.html` — blog provider, feed URL, and post links.
-- `resources.html` — resource titles, descriptions, download links, and book entries.
-- `404.html` — error-page wording and links.
-
-Also search the entire repository for `Soumyajit`, `soumyajit9696.github.io`, and the original email address. Replace remaining references where appropriate.
-
-### 2. Replace images, documents, and other assets
-
-- Put your images in `images/` and update the corresponding paths in the HTML.
-- Replace the files in `favicon/` and the root `favicon.ico` with your own favicon set.
-- Replace or remove the PDFs in `docs/`.
-- Replace the self-hosted fonts in `fonts/` only if you also update the font declarations in `style.css`.
-- Remove the `Songs/` folder and `favsong.mp3` if you do not want the music player or do not have permission to redistribute the audio.
-- Remove any personal or unused assets that you do not want in your public repository.
-
-Keep filenames and paths in sync. Use appropriately sized, compressed images (WebP is a good option) to improve loading performance.
-
-### 3. Change the design
-
-The main design system lives in `style.css`. Edit its CSS custom properties to adjust the colours, typography, spacing, borders, and shadows. Search for the `:root` and `[data-theme="dark"]` sections to find the light- and dark-theme values.
-
-The interactive scripts are in `js/`:
-
-| File | Responsibility |
-| --- | --- |
-| `main.js` | Shared navigation and site interactions |
-| `brutal-tools.js` | Floating tools dock and its widgets |
-| `cursor.js` | Animated atom cursor |
-| `palette.js` | Theme and palette-related interactions |
-| `physics-fx.js` | Decorative physics-equation effects |
-
-You can remove an effect by removing its script reference from the HTML pages. If you remove a script, check that no remaining page element depends on it.
-
-### 4. Update site URLs and SEO metadata
-
-Update the following in **every relevant HTML page**, not just the home page:
-
-- `<title>` and meta description
-- Canonical URL
-- Open Graph and Twitter metadata
-- Structured data (JSON-LD)
-- Favicon and web-app manifest references
-
-Also update:
-
-- `site.webmanifest` — site name, short name, theme colours, and icons.
-- `sitemap.xml` — your own domain and the pages you want indexed.
-- `robots.txt` — sitemap URL and crawler rules.
-- `llms.txt` and `llms-full.txt` — remove or rewrite the original author's information.
-- `CITATION.cff` — repository URL, author details, title, and license metadata.
-
-If you use a custom domain, configure it in GitHub Pages and update all canonical and sitemap URLs accordingly.
-
-### 5. Configure the blog and resources
-
-The blog page currently uses an external Blogger source. If you use Blogger, update the feed or source URL in `js/main.js` (and any page-specific links) to point to your blog. Otherwise, replace the integration with your own posts or remove the blog section.
-
-The resources page contains personal study materials, book entries, and audio-player content. Replace these with materials you have the right to share. Do not upload copyrighted books, music, or other third-party material without permission.
-
-## Run locally
-
-No installation or build command is needed. From the repository root, run:
+You can open `index.html` directly in a browser. For a local web server, run:
 
 ```bash
-python3 -m http.server 8000
+python -m http.server 8000
 ```
 
 Then visit <http://localhost:8000>.
 
-You can also use another local static server or a code editor's live-server extension. Some external content, such as the Blogger feed, requires an internet connection.
+## 🎨 Customisation
 
-## Deploy to GitHub Pages
+Start with these files. Search for the existing personal details and replace them with your own.
 
-1. Push your customised files to your GitHub repository.
-2. Open **Settings → Pages** in that repository.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose your publishing branch (usually `main`) and the `/ (root)` folder, then save.
-5. Wait for the deployment to finish. Your site will be available at:
-   - User site: `https://YOUR-USERNAME.github.io/`
-   - Project site: `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`
+| What to change | Where to look |
+| --- | --- |
+| Name, role, biography and page content | `index.html`, `about.html` and other page files |
+| Profile picture and gallery images | `images/` |
+| Projects and project links | `projects.html` |
+| Skills and categories | `skills.html` |
+| Blog source / feed details | `blog.html` and `js/main.js` |
+| Colours, typography, spacing and layout | `style.css` |
+| Navigation, theme and shared interactions | `js/main.js` |
+| Cursor animation | `js/cursor.js` |
+| Floating physics equations | `js/physics-fx.js` |
+| Floating tools dock | `js/brutal-tools.js` |
+| Colour palette utility | `js/palette.js` |
+| Browser icon and app icons | `favicon/` and `site.webmanifest` |
+| Search-engine metadata | Page `<head>` sections, `sitemap.xml` and `robots.txt` |
 
-For a project site, remember to update relative paths, canonical URLs, metadata, and sitemap entries to match the published base path. GitHub's official guide: [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+### Change the website identity
 
-## Before you publish
+1. Replace the name, role, descriptions and contact information throughout the HTML files.
+2. Replace the profile and gallery images in `images/` with images you have permission to use.
+3. Replace `favicon/favicon.svg` and the other favicon files with your own logo and icons.
+4. Update page titles, descriptions, Open Graph metadata and canonical URLs in each page's `<head>`.
+5. Update `site.webmanifest`, `sitemap.xml`, `robots.txt`, `CITATION.cff` and any site-specific URLs.
+6. Review `llms.txt` and `llms-full.txt` and replace their personal/project information if you keep them.
+7. Remove personal documents, audio and any assets you do not intend to publish.
 
-- [ ] Replace all personal information and contact details.
-- [ ] Replace profile photos, gallery images, CVs, and other documents.
-- [ ] Update social, project, blog, and download links.
-- [ ] Update canonical URLs, SEO metadata, sitemap, and manifest.
-- [ ] Update `CITATION.cff` and remove references to the original author's identity where appropriate.
-- [ ] Remove music, books, images, or other files you do not have permission to redistribute.
-- [ ] Test every page and link on mobile and desktop.
-- [ ] Check the browser console for missing files or JavaScript errors.
-- [ ] Confirm that your public repository contains no private information.
+### Change the theme
 
-## Credits and attribution
+The main design system is in `style.css`. Look for the CSS custom properties near the beginning of the file to adjust the colour palette, borders, shadows and other shared design tokens. The fonts are stored in `fonts/`; replace them only with fonts whose licences permit your intended use.
 
-This template is based on the portfolio website created by **Soumyajit Das**. If you use or adapt the template, a credit or link back to the [original repository](https://github.com/Soumyajit9696/soumyajit9696.github.io) is appreciated, though it is not a condition of the MIT license for the code.
+## 🌐 Deploy with GitHub Pages
 
-Please do not present the original author's personal content, photographs, identity, or work as your own. See [LICENSE](LICENSE) for the scope of the software license.
+1. Push your customised project to a GitHub repository.
+2. Open **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select your branch (usually `main`) and the `/ (root)` folder, then save.
+5. Wait for GitHub Pages to publish your site.
+6. If you use a custom domain, configure it in the Pages settings and update your canonical URLs, sitemap and metadata.
 
-## Citation
+Because this is a static website, no server-side runtime is required. Some integrations or external feeds may need their own configuration to work on your deployed domain.
 
-If you use this repository in academic work or want to cite the original template, see [`CITATION.cff`](CITATION.cff) or use GitHub's **Cite this repository** feature. Update the citation metadata if you publish a substantially modified fork.
+## 📁 Repository structure
 
-## License
+```text
+.
+├── index.html
+├── about.html
+├── skills.html
+├── projects.html
+├── gallery.html
+├── blog.html
+├── resources.html
+├── 404.html
+├── style.css
+├── js/
+│   ├── main.js
+│   ├── brutal-tools.js
+│   ├── cursor.js
+│   ├── palette.js
+│   └── physics-fx.js
+├── images/
+├── fonts/
+├── favicon/
+├── docs/                 # Remove or replace personal documents
+├── Songs/                # Review included audio and its rights
+├── screenshots/          # Add your README showcase screenshots here
+├── CITATION.cff
+├── sitemap.xml
+├── robots.txt
+├── site.webmanifest
+├── llms.txt
+├── llms-full.txt
+├── LICENSE
+└── README.md
+```
 
-The reusable source code is distributed under the [MIT License](LICENSE). Personal content and third-party assets are not automatically included in that grant. Read the license before reusing or redistributing any part of the repository.
+## ⚖️ License & usage rights
+
+The reusable website source code authored for this template is released under the **MIT License**. You may use, copy, modify, merge, publish, distribute, sublicense and sell copies of that source code, subject to the license terms.
+
+**The MIT license does not automatically grant rights to every asset in this repository.** Unless a file says otherwise, the following personal materials are excluded and remain the property of their respective owners:
+
+- Personal photographs, portraits and gallery images.
+- CVs, résumés, certificates and other personal documents.
+- Personal writing, research material and project content.
+- Name, likeness, personal identity and branding.
+- Third-party fonts, music, logos, illustrations and other assets, which remain subject to their own licences or permissions.
+
+Do not redistribute these excluded materials, present yourself as the original author, or use the author's identity or branding in a way that suggests endorsement. Before publishing your customised site, replace or remove assets you do not have permission to use. See [`LICENSE`](LICENSE) for the full terms and scope.
+
+## 🙌 Attribution
+
+Attribution is appreciated but not required by the MIT License. If you share a version based on this template, you are welcome to link back to this repository.
+
+## 📬 Contact
+
+- **Website:** <https://soumyajit9696.github.io/>
+- **GitHub:** <https://github.com/soumyajit9696>
+
+---
+
+<div align="center">
+  <sub>Designed and built by <a href="https://soumyajit9696.github.io/">Soumyajit Das</a> · Made for the curious.</sub>
+</div>
