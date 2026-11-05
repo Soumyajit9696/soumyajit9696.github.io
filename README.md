@@ -31,7 +31,7 @@ The visual direction is **minimal neobrutalism**: crisp borders, confident typog
 
 > **Please make it your own.** Replace my name, biography, photos, projects, links and other personal content before publishing your version. See the [licensing notes](#-license--usage-rights) before reusing the included assets.
 
-## ✨ Features
+## ✨ Features-
 
 - Responsive multi-page layout for desktop, tablet and mobile.
 - Minimal neobrutalist visual system with light and dark themes.
